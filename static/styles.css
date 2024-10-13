@@ -1,0 +1,360 @@
+:root {
+  --primary-color: #fe4701;
+  --secondary-color: #4567b7;
+  --text-color: #ffffff;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", "Poppins", Arial, "Open Sans";
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  width: 100%;
+  height: 55px;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.makers,
+.montserrat-change {
+  font-weight: 600;
+  font-style: normal;
+  font-optical-sizing: auto;
+}
+
+.makers {
+  font-family: "Futura", sans-serif;
+  color: var(--primary-color);
+}
+
+.montserrat-change {
+  font-family: "Montserrat", sans-serif;
+  color: var(--secondary-color);
+}
+
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)),
+    url(./img/children.jpeg) center/cover no-repeat;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  text-align: center;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+section,
+header {
+  /* scroll-snap-align: start; */
+  max-width: 100%;
+  scroll-margin-top: 50px;
+}
+
+/* section {
+  scroll-snap-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} */
+
+.hero-title {
+  font-size: 3rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 2s ease-in;
+}
+
+.hero-subtitle {
+  font-size: 1.5em;
+  color: var(--text-color);
+  font-weight: bold;
+  margin-top: 30px;
+
+}
+
+.btn-group {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.btn-item,
+.donate-btn,
+.impact-btn {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  font-size: 1.125rem;
+  font-weight: 600;
+  border-radius: 1rem;
+  transition: background 0.4s ease, border 0.3s ease;
+  color: #fff;
+}
+
+.btn-item {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  max-width: 10rem;
+  border: none;
+}
+
+.donate-btn {
+  color: var(--text-color);
+  border: 2px solid var(--primary-color);
+}
+
+.btn-item:focus,
+.donate-btn:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+.donate-btn:hover {
+  background-color: var(--primary-color);
+}
+
+.impact-btn {
+  color: var(--text-color) !important;
+  background-color: var(--secondary-color);
+  transition: .4s ease-in-out;
+}
+
+.impact-btn:hover {
+  background-color: var(--text-color);
+  color: var(--secondary-color) !important;
+}
+
+.nav-link:hover {
+  text-decoration: underline solid var(--primary-color) 4px;
+}
+
+
+@media (max-width: 576px) {
+  header .nav-link {
+    font-size: 0.9rem;
+  }
+
+  header .btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+
+#about-us {
+  background-color: #f9f9f9;
+}
+
+.about-image img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
+}
+
+.text-orange {
+  color: var(--primary-color);
+}
+
+#mission-vision {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url('./img/michphoto.jpeg') center/cover fixed;
+  overflow-x: hidden;
+}
+
+#mission-vision h2,
+#mission-vision h3 {
+  letter-spacing: 1px;
+}
+
+#mission-vision i {
+  transition: transform 0.3s ease-in-out;
+}
+
+#mission-vision i:hover {
+  transform: scale(1.2);
+}
+
+.accent-color,
+.impact-btn {
+  color: var(--secondary-color);
+}
+
+
+#call-to-action {
+  background-color: var(--primary-color);
+}
+
+
+.social-links a {
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+/* General Styles */
+#impact {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Impact Box */
+.impact-box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.impact-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Button Animation */
+.animate__pulse:hover {
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+#testimonials .testimonial-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--text-color);
+  text-align: center;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-height: 300px !important;
+  height: 100%;
+  text-align: center;
+}
+
+.testimonial-image img {
+  aspect-ratio: 2/2;
+  border: 3px solid var(--primary-color);
+  transition: transform 0.3s ease;
+}
+
+.testimonial-image img:hover {
+  transform: scale(1.1);
+}
+
+/* Quote Styling */
+blockquote {
+  font-style: italic;
+  flex-grow: 1;
+}
+
+.blockquote i {
+  color: var(--primary-color);
+}
+
+.blockquote-footer {
+  font-style: italic;
+  margin-top: 0.75rem;
+}
+
+/* Responsive Testimonial Cards */
+@media (max-width: 768px) {
+  .testimonial-card {
+    margin-bottom: 20px;
+  }
+}
+
+#testimonials .testimonial-image img,
+#testimonials .testimonial-video {
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#testimonials .carousel-control-prev-icon,
+#testimonials .carousel-control-next-icon {
+  background-color: var(--primary-color);
+  border-radius: 50%;
+}
+
+/* Headings and Text */
+.donate-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.75rem;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.donate-subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #666;
+  text-align: center;
+}
+
+/* Donation Input */
+.donation-amount input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.donation-amount input:focus {
+  border-color: var(--primary-color);
+}
+
+/* Payment Methods */
+.payment-methods h3 {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.payment-btn {
+  text-align: center;
+}
+
+.payment-btn img {
+  display: block;
+  width: 50px;
+  height: 30px;
+  /* aspect-ratio: 2/1; */
+  margin: auto;
+  text-align: center;
+  margin-bottom: 6pt;
+}
