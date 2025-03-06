@@ -127,7 +127,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 📞 +254 345 678 90
 
 **Development Team**  
-👨💻 [Mayen007] - [your.email@example.com](mailto:alonerpunk@gmail.com)
+👨💻 [Mayen007] - [email](mailto:alonerpunk@gmail.com)
 
 [Live Demo](https://changemakers.onrender.com) | [Project Board](#) | [Documentation Wiki](#)
 
