@@ -70,7 +70,7 @@ cd ChangeMakers && open index.html
 │   ├── scripts.js
 │   └── img/
 │       ├── changemakers-logo.png
-│       ├── diverse-volunteers-taking-selfie-together.jpg
+│       ├── volunteers.jpg
 │       └── testimonial-images/
 └── README.md
 ```
