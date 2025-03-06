@@ -1,6 +1,6 @@
 # ChangeMakers - Community Empowerment Platform
 
-![ChangeMakers Logo](./static/img/changemakers-logo.png)
+![ChangeMakers Logo](./static/img/changemakers-logo.png )
 
 A responsive website for a non-profit organization dedicated to sustainable community development, education, and climate action initiatives.
 
@@ -108,7 +108,7 @@ git push origin feature/AmazingFeature
 5. Open a Pull Request
 
 **Issue Tracking**  
-Report bugs and feature requests via [GitHub Issues](https://github.com/mayen007/changemakers/issues)
+Report bugs and feature requests via [GitHub Issues](https://github.com/mayen007/ChangeMakers/issues)
 
 ## License
 
@@ -127,9 +127,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 📞 +254 345 678 90
 
 **Development Team**  
-👨💻 [Your Name] - [your.email@example.com](mailto:alonerpunk@gmail.com)
+👨💻 [Mayen007] - [your.email@example.com](mailto:alonerpunk@gmail.com)
 
-[Live Demo](#) | [Project Board](#) | [Documentation Wiki](#)
+[Live Demo](https://changemakers.onrender.com) | [Project Board](#) | [Documentation Wiki](#)
 
 ---
 
