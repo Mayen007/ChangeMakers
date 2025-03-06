@@ -1,6 +1,6 @@
 # ChangeMakers - Community Empowerment Platform
 
-![ChangeMakers Logo](./static/img/changemakers-logo.png )
+![ChangeMakers Logo](./static/img/changemakers-logo.png)
 
 A responsive website for a non-profit organization dedicated to sustainable community development, education, and climate action initiatives.
 
@@ -78,7 +78,7 @@ cd ChangeMakers && open index.html
 ## Technologies Used
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)  
-![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=flat&logo=bootstrap&logoColor=white)  
+![Bootstrap](https://img.shields.io/badge/Bootstrap%205.3.3-7952B3?style=flat&logo=bootstrap&logoColor=white)  
 ![Animate.css](https://img.shields.io/badge/Animate.css-4.1.1-blue)  
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
 
