@@ -1,3 +1,4 @@
+// Existing counter code
 const counters = document.querySelectorAll('.counter');
 
 // Function to update the counter
@@ -31,15 +32,18 @@ counters.forEach(counter => {
   counterObserver.observe(counter);
 });
 
-
-
 // Function to trigger the animation
-const addAnimation = (element, animationClass) => {
-  element.classList.add('animate__animated', animationClass);
+const addAnimation = (element, animationClass, delay = '') => {
+  if (delay) {
+    element.classList.add('animate__animated', animationClass, delay);
+  } else {
+    element.classList.add('animate__animated', animationClass);
+  }
 
   // Remove animation classes after it's done, so it can re-trigger next time
   element.addEventListener('animationend', () => {
     element.classList.remove('animate__animated', animationClass);
+    if (delay) element.classList.remove(delay);
   }, { once: true }); // Ensure this runs only once after each animation
 };
 
@@ -48,30 +52,69 @@ const animationObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       const targetElement = entry.target;
+      const animationType = targetElement.dataset.animation || 'fadeIn';
+      const animationDelay = targetElement.dataset.delay || '';
 
-      // Add specific animations based on element ID or class
-      if (targetElement.id === 'mission-title') {
-        addAnimation(targetElement, 'animate__fadeInDown');
-      } else if (targetElement.id === 'mission-description') {
-        addAnimation(targetElement, 'animate__fadeInDown', 'animate__delay-1s');
-      } else if (targetElement.id === 'mission-content') {
-        addAnimation(targetElement, 'animate__fadeInLeft');
-      } else if (targetElement.id === 'vision-content') {
-        addAnimation(targetElement, 'animate__fadeInRight');
-      }
+      addAnimation(targetElement, `animate__${animationType}`, animationDelay);
     }
   });
 }, { threshold: 0.3 }); // Adjust threshold as needed
 
-// Selecting the elements to observe
-const elementsToAnimate = [
-  document.getElementById('mission-title'),
-  document.getElementById('mission-description'),
-  document.getElementById('mission-content'),
-  document.getElementById('vision-content')
-];
+// Enhanced animation system - expand beyond just mission/vision
+document.addEventListener('DOMContentLoaded', function () {
+  // Find all elements with data-animation attribute
+  const animatedElements = document.querySelectorAll('[data-animation]');
 
-// Observing each element
-elementsToAnimate.forEach(el => {
-  animationObserver.observe(el);
+  // Observe all animated elements
+  animatedElements.forEach(el => {
+    animationObserver.observe(el);
+  });
+
+  // Also observe the original elements
+  const originalElements = [
+    document.getElementById('mission-title'),
+    document.getElementById('mission-description'),
+    document.getElementById('mission-content'),
+    document.getElementById('vision-content')
+  ];
+
+  originalElements.forEach(el => {
+    if (el) animationObserver.observe(el);
+  });
+
+  // Initialize tooltips if Bootstrap 5
+  if (typeof bootstrap !== 'undefined' && bootstrap.Tooltip) {
+    const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+  }
+
+  // Smooth scrolling for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const targetId = this.getAttribute('href');
+      if (targetId === '#') return;
+
+      const targetElement = document.querySelector(targetId);
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop - 80, // Adjust for navbar height
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+});
+
+// Navbar background change on scroll
+window.addEventListener('scroll', function () {
+  const navbar = document.querySelector('.navbar');
+  if (window.scrollY > 50) {
+    navbar.classList.add('navbar-scrolled', 'shadow-sm');
+  } else {
+    navbar.classList.remove('navbar-scrolled', 'shadow-sm');
+  }
 });
