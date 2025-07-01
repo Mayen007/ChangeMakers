@@ -19,19 +19,19 @@
 </head>
 
 <body>
-  <header class="top-header shadow-sm">
-    <div class="container-fluid d-flex align-items-center justify-content-between px-3 py-2">
+  <header>
+    <div class="container-fluid d-flex align-items-center justify-content-between px-1 py-2">
       <div class="d-flex text-white flex-column flex-md-row">
         <a href="mailto:contact@changemakers.org" aria-label="Email ChangeMakers"
-          class="nav-link d-flex align-items-center">
+          class="header-link text-white d-flex align-items-center">
           <i class="bi bi-envelope me-2"></i> contact@changemakers.org
         </a>
         <a href="tel:+25434567890" aria-label="Call ChangeMakers"
-          class="nav-link d-flex align-items-center ms-0 ms-md-4">
+          class="header-link text-white d-flex align-items-center ms-0 ms-md-4">
           <i class="bi bi-phone me-2"></i> +254 345 678 90
         </a>
       </div>
-      <div class="social-header  d-md-flex">
+      <div class="social-header  d-flex">
         <a href="#" class="text-white mx-2" title="Facebook"><i class="bi bi-facebook"></i></a>
         <a href="#" class="text-white mx-2" title="Twitter"><i class="bi bi-twitter-x"></i></a>
         <a href="#" class="text-white mx-2" title="Instagram"><i class="bi bi-instagram"></i></a>
@@ -49,8 +49,9 @@
         </div>
       </a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
-        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler border-0 fs-1" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+        aria-label="Toggle navigation">
         <i class="bi bi-list"></i>
       </button>
 
@@ -81,7 +82,6 @@
     </div>
   </nav>
   <main>
-    <!-- Replace the existing hero section -->
     <section class="hero-section">
       <div class="hero-overlay"></div>
       <div class="container h-100 d-flex flex-column justify-content-center">
@@ -109,8 +109,8 @@
                 <div class="stat-label text-white">Countries</div>
               </div>
               <div class="stat-item text-center">
-                <div class="stat-number fw-bold display-6 text-primary">50K+</div>
-                <div class="stat-label text-white">Lives Changed</div>
+                <div class="stat-number fw-bold display-6 text-center text-primary">50K+</div>
+                <div class="stat-label text-white text-center">Lives Changed</div>
               </div>
               <div class="stat-item text-center">
                 <div class="stat-number fw-bold display-6 text-primary">1K+</div>
@@ -151,7 +151,6 @@
         </div>
       </div>
     </section>
-
 
     <section id="mission-vision" class="container-fluid position-relative text-light py-5">
       <div class="position-absolute top-0 start-0 w-100 h-100 overlay"></div>
@@ -476,7 +475,7 @@
         </div>
       </div>
     </section>
-    <!-- Reimagined Success Stories Section -->
+    <!-- Success Stories Section -->
     <section id="testimonials" class="py-5 bg-white position-relative overflow-hidden">
       <!-- Background Elements -->
       <div class="position-absolute top-0 end-0 opacity-10 d-none d-lg-block">
@@ -719,7 +718,7 @@
       </div>
     </section>
 
-    <!-- Enhanced Donation Modal -->
+    <!-- Donation Modal -->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
       aria-labelledby="donationModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-lg">

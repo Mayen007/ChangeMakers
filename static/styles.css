@@ -77,6 +77,10 @@ p {
   margin-bottom: 1.5rem;
 }
 
+.header-link {
+  text-decoration: underline solid var(--primary) 4px;
+}
+
 /* Universal Transitions & Hover Effects */
 a,
 button,
@@ -157,7 +161,7 @@ header {
   background: url("./img/children.jpeg") center/cover no-repeat;
   width: 100%;
   position: relative;
-  min-height: 100vh;
+  min-height: 92vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -837,7 +841,7 @@ blockquote {
 }
 
 @media (max-width: 576px) {
-  header .nav-link {
+  header .header-link {
     font-size: 0.9rem;
   }
 
