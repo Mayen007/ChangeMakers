@@ -33,60 +33,60 @@ The website features dynamic content presentation, donor engagement tools, and r
 
 ## Features
 
-### 🎨 **Modern Design & UX**
+### **Modern Design & UX**
 
-- ✅ **Responsive Bootstrap 5.3.3** layout with mobile-first design
-- 🎭 **Smooth animations** with optimized animate.css integration
-- 📱 **Cross-device compatibility** (phones, tablets, desktops)
-- 🎯 **Streamlined navigation** with intuitive user flow
-- 🚀 **Fast loading** optimized assets and lazy loading
+- **Responsive Bootstrap 5.3.3** layout with mobile-first design
+- **Smooth animations** with optimized animate.css integration
+- **Cross-device compatibility** (phones, tablets, desktops)
+- **Streamlined navigation** with intuitive user flow
+- **Fast loading** optimized assets and lazy loading
 
-### � **Enhanced Donation System**
+### **Enhanced Donation System**
 
-- �💌 **Interactive donation modal** with real-time impact preview
-- 💳 **Multiple payment options** (PayPal, Cards, Apple Pay, Google Pay, M-Pesa)
-- 🔄 **Recurring donation support** (one-time, monthly, yearly)
-- 📊 **Dynamic impact calculator** showing donation effects
-- 🎯 **Smart preset amounts** with custom input option
+- **Interactive donation modal** with real-time impact preview
+- **Multiple payment options** (PayPal, Cards, Apple Pay, Google Pay, M-Pesa)
+- **Recurring donation support** (one-time, monthly, yearly)
+- **Dynamic impact calculator** showing donation effects
+- **Smart preset amounts** with custom input option
 
-### 📊 **Dynamic Content & Analytics**
+### **Dynamic Content & Analytics**
 
-- 📈 **Animated impact counters** with smooth RequestAnimationFrame
-- �️ **Interactive testimonials grid** replacing traditional carousel
-- � **Intersection Observer** for performance-optimized animations
-- 📱 **Responsive testimonial layout** (hero, regular, and mini cards)
+- **Animated impact counters** with smooth RequestAnimationFrame
+- **Interactive testimonials grid** replacing traditional carousel
+- **Intersection Observer** for performance-optimized animations
+- **Responsive testimonial layout** (hero, regular, and mini cards)
 
-### 🤝 **Community Engagement**
+### **Community Engagement**
 
-- 🔧 **Volunteer registration system** with form validation
-- 📜 **Success stories showcase** with 6+ real testimonials
-- 🌍 **Global impact visualization** across 25+ countries
-- 💬 **Social media integration** with accessibility features
+- **Volunteer registration system** with form validation
+- **Success stories showcase** with 6+ real testimonials
+- **Global impact visualization** across 25+ countries
+- **Social media integration** with accessibility features
 
-### ⚡ **Performance & Accessibility**
+### **Performance & Accessibility**
 
-- 🚀 **Optimized JavaScript** with class-based architecture
-- 🎯 **Efficient CSS** with consolidated variables and utilities
-- ♿ **WCAG compliant** with proper ARIA labels
-- 🔒 **Secure forms** with client-side validation
-- 🌐 **SEO optimized** with proper meta tags and structure
+- **Optimized JavaScript** with class-based architecture
+- **Efficient CSS** with consolidated variables and utilities
+- **WCAG compliant** with proper ARIA labels
+- **Secure forms** with client-side validation
+- **SEO optimized** with proper meta tags and structure
 
 ## Recent Updates
 
-### 🎯 **Navigation Optimization** _(Latest)_
+### **Navigation Optimization** _(Latest)_
 
 - **Streamlined menu structure** - Eliminated redundant dropdown items
 - **Direct action flow** - Simplified user journey from discovery to donation
 - **Mobile-optimized** - Better responsive navigation experience
 
-### 🏗️ **Testimonials Section Redesign**
+### **Testimonials Section Redesign**
 
 - **Grid-based layout** - Replaced carousel with modern card grid
 - **Enhanced visual hierarchy** - Hero card, regular cards, and mini cards
 - **Improved animations** - Smooth fade-in effects with persistent visibility
 - **Better storytelling** - Impact stats bar and call-to-action integration
 
-### ⚡ **JavaScript Architecture Overhaul**
+### **JavaScript Architecture Overhaul**
 
 - **Class-based structure** - `ChangeMakersAnimations` and `DonationModal` classes
 - **Performance optimization** - RequestAnimationFrame for smooth counters
@@ -94,14 +94,14 @@ The website features dynamic content presentation, donor engagement tools, and r
 - **Memory management** - Proper cleanup and element caching
 - **50% code reduction** - Eliminated redundancies and improved maintainability
 
-### 🎨 **CSS Framework Optimization**
+### **CSS Framework Optimization**
 
 - **CSS Variables system** - Centralized color, spacing, and effect management
 - **Utility classes** - Reusable hover effects and transitions
 - **Consolidated rules** - Eliminated duplicate styles and selectors
 - **Better organization** - Logical grouping and consistent naming
 
-### 💰 **Enhanced Donation Experience**
+### **Enhanced Donation Experience**
 
 - **Real-time impact preview** - Shows exactly what each donation amount achieves
 - **Smart payment flow** - Improved UX with better state management
@@ -162,7 +162,7 @@ ChangeMakers/
             └── sophia.jpg
 ```
 
-### 📁 **File Organization**
+### **File Organization**
 
 - **`index.html`** - Single-page application with semantic HTML5
 - **`static/styles.css`** - Modular CSS with CSS custom properties
@@ -171,7 +171,7 @@ ChangeMakers/
 
 ## Performance Optimizations
 
-### ⚡ **JavaScript Performance**
+### **JavaScript Performance**
 
 - **Class-based architecture** - Better memory management and code organization
 - **RequestAnimationFrame** - Smooth 60fps counter animations
@@ -180,7 +180,7 @@ ChangeMakers/
 - **Intersection Observer** - Efficient viewport-based animations
 - **Event delegation** - Reduced memory footprint for dynamic content
 
-### 🎨 **CSS Optimizations**
+### **CSS Optimizations**
 
 - **CSS Custom Properties** - Centralized theming system
 - **Utility classes** - Reusable components reducing code duplication
@@ -188,14 +188,14 @@ ChangeMakers/
 - **Strategic `will-change`** - Hardware acceleration for animations
 - **Responsive design** - Mobile-first approach with optimized breakpoints
 
-### 🖼️ **Asset Optimization**
+### **Asset Optimization**
 
 - **Lazy loading** - Images load only when needed
 - **Optimized images** - Compressed assets with proper formats
 - **CDN delivery** - Bootstrap and external libraries via CDN
 - **Minimal HTTP requests** - Consolidated stylesheets and scripts
 
-### 📊 **Performance Metrics**
+### **Performance Metrics**
 
 - **Lighthouse Score**: 95+ performance rating
 - **First Contentful Paint**: < 1.5s
@@ -205,13 +205,13 @@ ChangeMakers/
 
 ## Technologies Used
 
-### 🎨 **Frontend Framework**
+### **Frontend Framework**
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white) **Semantic HTML5** - Accessible markup structure  
 ![Bootstrap](https://img.shields.io/badge/Bootstrap%205.3.3-7952B3?style=flat&logo=bootstrap&logoColor=white) **Bootstrap 5.3.3** - Responsive framework  
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white) **Modern CSS** - Custom properties, Grid, Flexbox
 
-### ⚡ **JavaScript & Animation**
+### **JavaScript & Animation**
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=flat&logo=javascript&logoColor=black) **ES6+ Classes** - Modern JavaScript architecture  
 ![Animate.css](https://img.shields.io/badge/Animate.css-4.1.1-blue) **Animate.css 4.1.1** - CSS animation library  
@@ -233,14 +233,14 @@ ChangeMakers/
 
 ## Browser Compatibility
 
-### ✅ **Fully Supported**
+### **Fully Supported**
 
 - **Chrome 88+** - Full feature support
 - **Firefox 85+** - Complete compatibility
 - **Safari 14+** - iOS and macOS support
 - **Edge 88+** - Chromium-based versions
 
-### ⚠️ **Graceful Degradation**
+### **Graceful Degradation**
 
 - **IE 11** - Basic functionality (no animations)
 - **Older browsers** - Fallback to standard Bootstrap components
@@ -257,7 +257,7 @@ ChangeMakers/
 
 We welcome contributions to improve ChangeMakers! Here's how you can help:
 
-### 🚀 **Getting Started**
+### **Getting Started**
 
 1. **Fork the repository**
 
@@ -289,7 +289,7 @@ git commit -m 'feat: add amazing feature'
 git push origin feature/amazing-feature
 ```
 
-### 📝 **Contribution Guidelines**
+### **Contribution Guidelines**
 
 **Code Style:**
 
@@ -311,7 +311,7 @@ git push origin feature/amazing-feature
 - Add JSDoc comments for JavaScript functions
 - Include accessibility notes for UI changes
 
-### 🐛 **Issue Reporting**
+### **Issue Reporting**
 
 Found a bug? Please create an issue with:
 
@@ -328,19 +328,19 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Acknowledgements
 
-### 🙏 **Open Source Libraries**
+### **Open Source Libraries**
 
 - **[Bootstrap](https://getbootstrap.com/)** - The world's most popular CSS framework
 - **[Animate.css](https://animate.style/)** - Just-add-water CSS animations by Daniel Eden
 - **[Bootstrap Icons](https://icons.getbootstrap.com/)** - High-quality SVG icon library
 
-### 🎨 **Design Inspiration**
+### **Design Inspiration**
 
 - **Material Design** - Google's design language principles
 - **Modern non-profit websites** - Best practices in donor engagement
 - **Accessibility guidelines** - WCAG 2.1 AA compliance standards
 
-### 📸 **Assets & Media**
+### **Assets & Media**
 
 - **Unsplash** - High-quality photography for hero sections
 - **Community photos** - Real testimonial images with permission
@@ -354,32 +354,32 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-### 🏢 **ChangeMakers Organization**
+### **ChangeMakers Organization**
 
-📧 **General Inquiries:** [contact@changemakers.org](mailto:contact@changemakers.org)  
-📞 **Phone:** +254 345 678 90  
-🌍 **Location:** 123 Impact Street, Nairobi, Kenya
+**General Inquiries:** [contact@changemakers.org](mailto:contact@changemakers.org)  
+**Phone:** +254 345 678 90  
+**Location:** 123 Impact Street, Nairobi, Kenya
 
-### 👨‍💻 **Development Team**
+### **Development Team**
 
 **Lead Developer:** [Mayen007](https://github.com/Mayen007)  
-📧 **Technical Contact:** [alonerpunk@gmail.com](mailto:alonerpunk@gmail.com)
+**Technical Contact:** [alonerpunk@gmail.com](mailto:alonerpunk@gmail.com)
 
-### 🔗 **Project Links**
+### **Project Links**
 
-🌐 **[Live Demo](https://changemakers.onrender.com)** - Experience the full website  
-📋 **[Project Board](#)** - Track development progress  
-📚 **[Documentation Wiki](#)** - Detailed technical documentation
+**[Live Demo](https://changemakers.onrender.com)** - Experience the full website  
+**[Project Board](#)** - Track development progress  
+**[Documentation Wiki](#)** - Detailed technical documentation
 
-### 🤝 **Get Involved**
+### **Get Involved**
 
-💰 **[Donate](https://changemakers.onrender.com#staticBackdrop)** - Support our mission  
-🙋‍♀️ **[Volunteer](https://changemakers.onrender.com#volunteerModal)** - Join our team  
-💼 **[Partner With Us](#)** - Corporate collaboration opportunities
+**[Donate](https://changemakers.onrender.com#staticBackdrop)** - Support our mission  
+**[Volunteer](https://changemakers.onrender.com#volunteerModal)** - Join our team  
+**[Partner With Us](#)** - Corporate collaboration opportunities
 
 ---
 
-### 📊 **Project Status**
+### **Project Status**
 
 [![Website Status](https://img.shields.io/website?url=https%3A%2F%2Fchangemakers.onrender.com)](https://changemakers.onrender.com)  
 [![Powered by Bootstrap](https://img.shields.io/badge/Powered%20by-Bootstrap-7952B3)](https://getbootstrap.com)  
