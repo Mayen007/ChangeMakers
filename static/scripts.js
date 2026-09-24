@@ -435,24 +435,38 @@ class DonationModal {
   }
 
   showError(error) {
-    this.showNotification('error', error || 'There was an error starting your M-Pesa donation. Please try again.');
+    const messages = {
+      'Wrong credentials': 'M-Pesa is temporarily unavailable. Please try again later.',
+      'M-Pesa is not configured on the server.': 'M-Pesa is not available right now. Please try again later.',
+      'Enter a valid Safaricom phone number.': 'Please enter a valid Safaricom number, such as 0712345678.',
+      'Donation amount must be a whole number between 1 and 10,000.': 'Please enter a donation between 1 and 10,000.'
+    };
+    const message = messages[error] || 'We could not start your M-Pesa donation. Please check your details and try again.';
+    this.showNotification('error', message);
     this.updateDonateButton(); // Reset button state
   }
 
   showNotification(type, message) {
     const alertClass = type === 'success' ? 'alert-success' : 'alert-danger';
     const icon = type === 'success' ? 'check-circle-fill' : 'exclamation-triangle-fill';
+    const title = type === 'success' ? 'Donation started' : 'Donation not started';
 
     const notification = document.createElement('div');
-    notification.className = `alert ${alertClass} alert-dismissible fade show position-fixed`;
-    notification.style.cssText = 'top: 100px; right: 20px; z-index: 9999; min-width: 300px;';
+    notification.className = `notification-toast alert ${alertClass} alert-dismissible fade show shadow-sm`;
+    notification.setAttribute('role', type === 'success' ? 'status' : 'alert');
+    notification.setAttribute('aria-live', type === 'success' ? 'polite' : 'assertive');
+    notification.setAttribute('aria-atomic', 'true');
     notification.innerHTML = `
       <div class="d-flex align-items-center">
         <i class="bi bi-${icon} me-2 fs-4"></i>
-        <div>${message}</div>
+        <div>
+          <div class="fw-bold">${title}</div>
+          <div class="notification-message"></div>
+        </div>
       </div>
       <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
     `;
+    notification.querySelector('.notification-message').textContent = message;
 
     document.body.appendChild(notification);
     setTimeout(() => notification.remove(), 5000);

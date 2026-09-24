@@ -78,6 +78,19 @@ p {
   margin-bottom: 1.5rem;
 }
 
+.notification-toast {
+  position: fixed;
+  top: 6.25rem;
+  right: 1rem;
+  z-index: 1080;
+  width: min(26rem, calc(100vw - 2rem));
+  margin: 0;
+}
+
+.notification-toast .notification-message {
+  line-height: 1.4;
+}
+
 .header-link {
   text-decoration: underline solid var(--primary) 4px;
 }
@@ -842,6 +855,13 @@ blockquote {
 }
 
 @media (max-width: 576px) {
+  .notification-toast {
+    top: 7rem;
+    right: max(0.75rem, env(safe-area-inset-right));
+    left: max(0.75rem, env(safe-area-inset-left));
+    width: auto;
+  }
+
   header .header-link {
     font-size: 0.9rem;
   }
