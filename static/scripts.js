@@ -1,3 +1,5 @@
+const apiBaseUrl = window.location.port === '5500' ? 'http://localhost:3010' : '';
+
 // Optimized Animation and Counter System
 class ChangeMakersAnimations {
   constructor() {
@@ -379,7 +381,7 @@ class DonationModal {
     this.setProcessingState();
 
     try {
-      const response = await fetch('/api/mpesa/stkpush', {
+      const response = await fetch(`${apiBaseUrl}/api/mpesa/stkpush`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
