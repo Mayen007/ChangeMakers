@@ -58,6 +58,7 @@ body {
   line-height: 1.6;
   color: var(--gray-800);
   background-color: var(--gray-100);
+  font-size: 16px;
 }
 
 /* Typography */
@@ -182,13 +183,13 @@ header {
 
 .hero-title {
   font-weight: 800;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
   color: var(--white);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .hero-subtitle {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   max-width: 800px;
   margin: 0 auto 2rem;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
@@ -212,7 +213,7 @@ header {
 
 /* Buttons */
 .btn {
-  padding: 0.7rem 1.5rem;
+  padding: 0.7rem 1.25rem;
   font-weight: 600;
   border-radius: var(--border-radius);
 }

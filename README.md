@@ -128,13 +128,34 @@ cd ChangeMakers && open index.html
 - Bootstrap Icons 1.11.3
 - animate.css 4.1.1
 
+### M-Pesa Setup
+
+Donations use Safaricom Daraja STK Push. The browser calls the local Node server, while Daraja credentials remain in environment variables.
+
+1. Copy `.env.example` to `.env` and fill in the Daraja sandbox credentials.
+2. Set `MPESA_CALLBACK_URL` to a publicly reachable HTTPS URL ending in `/api/mpesa/callback`.
+3. Start the site with:
+
+```bash
+npm start
+```
+
+Open `http://localhost:3000`. The callback URL cannot be `localhost`; use a deployed HTTPS URL or a development tunnel when testing payment callbacks.
+
 ## Project Structure
 
 ```
 ChangeMakers/
 ├── index.html                 # Main HTML file with semantic structure
+├── server.js                  # Application composition root
+├── src/                       # Separated backend modules
+│   ├── config.js              # Environment and runtime configuration
+│   ├── mpesa/                 # Daraja API client
+│   ├── donations/             # Donation rules and transaction storage
+│   └── http/                  # Request parsing, routes, and static files
 ├── LICENSE                    # MIT License
 ├── README.md                  # Project documentation
+├── .env.example               # M-Pesa configuration template
 └── static/
     ├── styles.css            # Optimized CSS with variables and utilities
     ├── scripts.js            # Class-based JavaScript architecture
@@ -167,6 +188,8 @@ ChangeMakers/
 - **`index.html`** - Single-page application with semantic HTML5
 - **`static/styles.css`** - Modular CSS with CSS custom properties
 - **`static/scripts.js`** - ES6+ class-based JavaScript modules
+- **`server.js`** - Thin entrypoint that composes backend services
+- **`src/`** - Backend modules separated by responsibility
 - **`static/img/`** - Optimized images with descriptive naming
 
 ## Performance Optimizations
@@ -272,7 +295,6 @@ git checkout -b feature/amazing-feature
 ```
 
 3. **Make your changes**
-
    - Follow existing code style and conventions
    - Test across different browsers and devices
    - Ensure accessibility compliance

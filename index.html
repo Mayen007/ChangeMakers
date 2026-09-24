@@ -1,1108 +1,1827 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./static/styles.css" />
+    <meta
+      name="description"
+      content="ChangeMakers - Empowering individuals, transforming communities through sustainable initiatives."
+    />
+    <meta
+      name="keywords"
+      content="sustainability, empowerment, education, healthcare, climate action, community development"
+    />
+    <meta name="author" content="ChangeMakers Team" />
+    <link
+      rel="shortcut icon"
+      href="./static/img/changemakers-logo.png"
+      type="image/x-icon"
+    />
+    <title>ChangeMakers</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="stylesheet" href="./static/styles.css">
-  <meta name="description"
-    content="ChangeMakers - Empowering individuals, transforming communities through sustainable initiatives.">
-  <meta name="keywords"
-    content="sustainability, empowerment, education, healthcare, climate action, community development">
-  <meta name="author" content="ChangeMakers Team">
-  <link rel="shortcut icon" href="./static/img/changemakers-logo.png" type="image/x-icon">
-  <title>ChangeMakers</title>
-</head>
-
-<body>
-  <header>
-    <div class="container-fluid d-flex align-items-center justify-content-between px-1 py-2">
-      <div class="d-flex text-white flex-column flex-md-row">
-        <a href="mailto:contact@changemakers.org" aria-label="Email ChangeMakers"
-          class="header-link text-white d-flex align-items-center">
-          <i class="bi bi-envelope me-2"></i> contact@changemakers.org
-        </a>
-        <a href="tel:+25434567890" aria-label="Call ChangeMakers"
-          class="header-link text-white d-flex align-items-center ms-0 ms-md-4">
-          <i class="bi bi-phone me-2"></i> +254 345 678 90
-        </a>
-      </div>
-      <div class="social-header  d-flex">
-        <a href="#" class="text-white mx-2" title="Facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="text-white mx-2" title="Twitter"><i class="bi bi-twitter-x"></i></a>
-        <a href="#" class="text-white mx-2" title="Instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="text-white mx-2" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
-      </div>
-    </div>
-  </header>
-
-  <nav class="navbar navbar-expand-lg py-2 sticky-top shadow-sm">
-    <div class="container">
-      <a href="./index.html" class="text-decoration-none fs-2 navbar-brand d-flex align-items-center">
-        <img src="./static/img/changemakers-logo.png" alt="ChangeMakers Logo" class="me-2" width="40" height="40">
-        <div>
-          <span class="montserrat-change">Change</span><span class="makers">Makers</span>
+  <body>
+    <header>
+      <div
+        class="container-fluid d-flex align-items-center justify-content-between px-1 py-2"
+      >
+        <div class="d-flex text-white flex-column flex-md-row">
+          <a
+            href="mailto:contact@changemakers.org"
+            aria-label="Email ChangeMakers"
+            class="header-link text-white d-flex align-items-center"
+          >
+            <i class="bi bi-envelope me-2"></i> contact@changemakers.org
+          </a>
+          <a
+            href="tel:+25434567890"
+            aria-label="Call ChangeMakers"
+            class="header-link text-white d-flex align-items-center ms-0 ms-md-4"
+          >
+            <i class="bi bi-phone me-2"></i> +254 345 678 90
+          </a>
         </div>
-      </a>
-
-      <button class="navbar-toggler border-0 fs-1" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <i class="bi bi-list"></i>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
-          <li class="nav-item">
-            <a href="#about-us" class="nav-link">About</a>
-          </li>
-          <li class="nav-item">
-            <a href="#programs" class="nav-link">Programs</a>
-          </li>
-          <li class="nav-item">
-            <a href="#impact" class="nav-link">Impact</a>
-          </li>
-          <li class="nav-item">
-            <a href="#education-hub" class="nav-link">Resources</a>
-          </li>
-          <li class="nav-item">
-            <a href="#testimonials" class="nav-link">Stories</a>
-          </li>
-          <li class="nav-item ms-lg-3">
-            <button class="btn btn-primary rounded-pill px-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              <i class="bi bi-heart me-2"></i>Donate
-            </button>
-          </li>
-        </ul>
+        <div class="social-header d-flex">
+          <a href="#" class="text-white mx-2" title="Facebook"
+            ><i class="bi bi-facebook"></i
+          ></a>
+          <a href="#" class="text-white mx-2" title="Twitter"
+            ><i class="bi bi-twitter-x"></i
+          ></a>
+          <a href="#" class="text-white mx-2" title="Instagram"
+            ><i class="bi bi-instagram"></i
+          ></a>
+          <a href="#" class="text-white mx-2" title="LinkedIn"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+        </div>
       </div>
-    </div>
-  </nav>
-  <main>
-    <section class="hero-section">
-      <div class="hero-overlay"></div>
-      <div class="container h-100 d-flex flex-column justify-content-center">
-        <div class="row justify-content-center text-center">
-          <div class="col-md-10 col-lg-8">
-            <h1 class="hero-title display-3 animate__animated animate__fadeInDown">
-              Education. Empowerment. <span class="text-primary">Change.</span>
-            </h1>
-            <p class="hero-subtitle lead text-white mb-4 animate__animated animate__fadeInUp animate__delay-1s">
-              Transforming communities through sustainable education initiatives and empowering individuals to create
-              lasting positive impact.
-            </p>
-            <div class="btn-group animate__animated animate__zoomIn animate__delay-2s">
-              <a href="#education-hub" class="btn btn-primary btn-lg rounded-pill me-3 shadow-lg">
-                <i class="bi bi-book me-2"></i>Education Hub
-              </a>
-              <a href="#call-to-action" class="btn btn-outline-light btn-lg rounded-pill shadow-lg">
-                <i class="bi bi-heart me-2"></i>Support Our Work
-              </a>
-            </div>
-            <div
-              class="hero-stats d-flex justify-content-center mt-5 gap-4 animate__animated animate__fadeInUp animate__delay-2s">
-              <div class="stat-item text-center">
-                <div class="stat-number fw-bold display-6 text-primary">25+</div>
-                <div class="stat-label text-white">Countries</div>
-              </div>
-              <div class="stat-item text-center">
-                <div class="stat-number fw-bold display-6 text-center text-primary">50K+</div>
-                <div class="stat-label text-white text-center">Lives Changed</div>
-              </div>
-              <div class="stat-item text-center">
-                <div class="stat-number fw-bold display-6 text-primary">1K+</div>
-                <div class="stat-label text-white">Volunteers</div>
-              </div>
-            </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg py-2 sticky-top shadow-sm">
+      <div class="container">
+        <a
+          href="./index.html"
+          class="text-decoration-none fs-2 navbar-brand d-flex align-items-center"
+        >
+          <img
+            src="./static/img/changemakers-logo.png"
+            alt="ChangeMakers Logo"
+            class="me-2"
+            width="40"
+            height="40"
+          />
+          <div>
+            <span class="montserrat-change">Change</span
+            ><span class="makers">Makers</span>
           </div>
-        </div>
-      </div>
-    </section>
-    <section id="about-us" class="container my-5 py-5 px-4">
-      <div class="row align-items-center flex-lg-row-reverse">
-        <div class="col-lg-6">
-          <h2 class="display-5 fw-bold mb-4 text-uppercase">Who We Are</h2>
-          <p class="lead text-muted mb-4">
-            At <strong>ChangeMakers</strong>, we believe in empowering communities and individuals to create lasting
-            positive change.
-            We are a passionate team of volunteers, activists, and partners working together to make the world a better
-            place, one step at a time.
-          </p>
-          <ul class="list-unstyled mb-4">
-            <li class="mb-2">
-              <i class="bi bi-check-circle-fill text-orange me-2"></i> Focused on sustainable development
+        </a>
+
+        <button
+          class="navbar-toggler border-0 fs-1"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="bi bi-list"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+            <li class="nav-item">
+              <a href="#about-us" class="nav-link">About</a>
             </li>
-            <li class="mb-2">
-              <i class="bi bi-check-circle-fill text-orange me-2"></i> Active in over 25 countries
+            <li class="nav-item">
+              <a href="#programs" class="nav-link">Programs</a>
             </li>
-            <li class="mb-2">
-              <i class="bi bi-check-circle-fill text-orange me-2"></i> Supporting education, healthcare, and climate
-              action
+            <li class="nav-item">
+              <a href="#impact" class="nav-link">Impact</a>
+            </li>
+            <li class="nav-item">
+              <a href="#education-hub" class="nav-link">Resources</a>
+            </li>
+            <li class="nav-item">
+              <a href="#testimonials" class="nav-link">Stories</a>
+            </li>
+            <li class="nav-item ms-lg-3">
+              <button
+                class="btn btn-primary rounded-pill px-4"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+              >
+                <i class="bi bi-heart me-2"></i>Donate
+              </button>
             </li>
           </ul>
-          <a href="#our-mission" class="btn btn-dark btn-lg px-4 my-3">Learn More</a>
-        </div>
-        <div class="col-lg-6 mb-4 mb-lg-0">
-          <img src="./static/img/volunteers.jpg" alt="Diverse group of volunteers taking a selfie together"
-            class="img-fluid rounded shadow-lg" loading="lazy">
         </div>
       </div>
-    </section>
-
-    <section id="mission-vision" class="container-fluid position-relative text-light py-5">
-      <div class="position-absolute top-0 start-0 w-100 h-100 overlay"></div>
-      <div class="container position-relative text-center">
-        <div class="row mb-5">
-          <div class="col">
-            <h2 class="display-4 fw-bold text-uppercase mb-3 text-orange" id="mission-title">Our Mission & Vision</h2>
-            <p class="lead text-light" id="mission-description">Driving change through empowerment and sustainable
-              initiatives.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6 mb-4 mb-lg-0">
-            <div class="p-4 rounded bg-dark bg-opacity-75 h-100" id="mission-content">
-              <i class="bi bi-bullseye display-3 text-orange"></i>
-              <h3 class="fw-bold mb-3 text-orange">Our Mission</h3>
-              <p class="text-light">Our mission is to empower individuals and communities to lead sustainable and
-                impactful changes, supporting education, healthcare, and climate resilience across the globe.</p>
+    </nav>
+    <main>
+      <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container h-100 d-flex flex-column justify-content-center">
+          <div class="row justify-content-center text-center">
+            <div class="col-md-10 col-lg-8">
+              <h1
+                class="hero-title display-3 animate__animated animate__fadeInDown"
+              >
+                Education. Empowerment.
+                <span class="text-primary">Change.</span>
+              </h1>
+              <p
+                class="hero-subtitle lead text-white mb-4 animate__animated animate__fadeInUp animate__delay-1s"
+              >
+                Transforming communities through sustainable education
+                initiatives and empowering individuals to create lasting
+                positive impact.
+              </p>
+              <div
+                class="btn-group animate__animated animate__zoomIn animate__delay-2s"
+              >
+                <a
+                  href="#education-hub"
+                  class="btn btn-primary btn-lg rounded-pill me-3 shadow-lg"
+                >
+                  <i class="bi bi-book me-2"></i>Education Hub
+                </a>
+                <a
+                  href="#call-to-action"
+                  class="btn btn-outline-light btn-lg rounded-pill shadow-lg"
+                >
+                  <i class="bi bi-heart me-2"></i>Support Our Work
+                </a>
+              </div>
+              <div
+                class="hero-stats d-flex justify-content-center mt-5 gap-4 animate__animated animate__fadeInUp animate__delay-2s"
+              >
+                <div class="stat-item text-center">
+                  <div class="stat-number fw-bold display-6 text-primary">
+                    25+
+                  </div>
+                  <div class="stat-label text-white">Countries</div>
+                </div>
+                <div class="stat-item text-center">
+                  <div
+                    class="stat-number fw-bold display-6 text-center text-primary"
+                  >
+                    50K+
+                  </div>
+                  <div class="stat-label text-white text-center">
+                    Lives Changed
+                  </div>
+                </div>
+                <div class="stat-item text-center">
+                  <div class="stat-number fw-bold display-6 text-primary">
+                    1K+
+                  </div>
+                  <div class="stat-label text-white">Volunteers</div>
+                </div>
+              </div>
             </div>
           </div>
+        </div>
+      </section>
+      <section id="about-us" class="container my-5 py-5 px-4">
+        <div class="row align-items-center flex-lg-row-reverse">
           <div class="col-lg-6">
-            <div class="p-4 rounded bg-dark bg-opacity-75 h-100" id="vision-content">
-              <i class="bi bi-lightbulb display-3 accent-color"></i>
-              <h3 class="fw-bold mb-3 accent-color">Our Vision</h3>
-              <p class="text-light">We envision a world where every individual has the opportunity to create positive
-                change, leading to a future full of hope, equality, and sustainability for all.</p>
-            </div>
+            <h2 class="display-5 fw-bold mb-4 text-uppercase">Who We Are</h2>
+            <p class="lead text-muted mb-4">
+              At <strong>ChangeMakers</strong>, we believe in empowering
+              communities and individuals to create lasting positive change. We
+              are a passionate team of volunteers, activists, and partners
+              working together to make the world a better place, one step at a
+              time.
+            </p>
+            <ul class="list-unstyled mb-4">
+              <li class="mb-2">
+                <i class="bi bi-check-circle-fill text-orange me-2"></i> Focused
+                on sustainable development
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-check-circle-fill text-orange me-2"></i> Active
+                in over 25 countries
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-check-circle-fill text-orange me-2"></i>
+                Supporting education, healthcare, and climate action
+              </li>
+            </ul>
+            <a href="#our-mission" class="btn btn-dark btn-lg px-4 my-3"
+              >Learn More</a
+            >
+          </div>
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <img
+              src="./static/img/volunteers.jpg"
+              alt="Diverse group of volunteers taking a selfie together"
+              class="img-fluid rounded shadow-lg"
+              loading="lazy"
+            />
           </div>
         </div>
-      </div>
-    </section>
-    <section id="impact" class="py-5 bg-neutral-200">
-      <div class="container">
-        <div class="row justify-content-center mb-5 text-center">
-          <div class="col-lg-8">
-            <span class="badge bg-primary-light text-primary mb-3 px-3 py-2 rounded-pill">OUR IMPACT</span>
-            <h2 class="display-4 fw-bold">Making Real Change</h2>
-            <p class="lead text-muted">Measurable results that transform lives and communities globally.</p>
-          </div>
-        </div>
-        <div class="row g-4 mb-5">
-          <div class="col-md-4">
-            <div class="impact-card h-100 bg-white rounded-4 shadow-hover p-4 text-center">
-              <div class="impact-icon-wrapper mb-4">
-                <div
-                  class="impact-icon bg-primary-light p-3 rounded-circle d-inline-flex justify-content-center align-items-center">
-                  <i class="bi bi-people-fill text-primary display-6"></i>
-                </div>
-              </div>
-              <h3 class="fw-bold h2 mb-3">
-                <div class="d-flex align-items-center justify-content-center">
-                  <span class="counter" data-target="50000">0</span><span class="ms-2">+</span>
-                </div>
-                <div class="text-muted h5 mt-2">Lives Impacted</div>
-              </h3>
-              <div class="progress mb-3">
-                <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" title="Progress bar"
-                  aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-              <p class="text-muted">Individuals empowered through education, resources, and opportunity creation.</p>
-            </div>
-          </div>
+      </section>
 
-          <div class="col-md-4">
-            <div class="impact-card h-100 bg-white rounded-4 shadow-hover p-4 text-center">
-              <div class="impact-icon-wrapper mb-4">
-                <div
-                  class="impact-icon bg-secondary-light p-3 rounded-circle d-inline-flex justify-content-center align-items-center">
-                  <i class="bi bi-globe-americas text-secondary display-6"></i>
-                </div>
-              </div>
-              <h3 class="fw-bold h2 mb-3">
-                <div class="d-flex align-items-center justify-content-center">
-                  <span class="counter" data-target="25">0</span>
-                </div>
-                <div class="text-muted h5 mt-2">Countries Served</div>
-              </h3>
-              <div class="progress mb-3">
-                <div class="progress-bar bg-secondary" role="progressbar" title="Progress bar" style="width: 45%;"
-                  aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-              <p class="text-muted">Our global reach spans across 5 continents, bringing educational resources where
-                they're needed most.</p>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="impact-card h-100 bg-white rounded-4 shadow-hover p-4 text-center">
-              <div class="impact-icon-wrapper mb-4">
-                <div
-                  class="impact-icon bg-primary-light p-3 rounded-circle d-inline-flex justify-content-center align-items-center">
-                  <i class="bi bi-heart-fill text-primary display-6"></i>
-                </div>
-              </div>
-              <h3 class="fw-bold h2 mb-3">
-                <div class="d-flex align-items-center justify-content-center">
-                  <span class="counter" data-target="1000">0</span>
-                </div>
-                <div class="text-muted h5 mt-2">Volunteers</div>
-              </h3>
-              <div class="progress mb-3">
-                <div class="progress-bar bg-primary" role="progressbar" title="Progress bar" style="width: 75%;"
-                  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-              <p class="text-muted">Dedicated changemakers contributing their time, skills, and passion to our mission.
+      <section
+        id="mission-vision"
+        class="container-fluid position-relative text-light py-5"
+      >
+        <div class="position-absolute top-0 start-0 w-100 h-100 overlay"></div>
+        <div class="container position-relative text-center">
+          <div class="row mb-5">
+            <div class="col">
+              <h2
+                class="display-4 fw-bold text-uppercase mb-3 text-orange"
+                id="mission-title"
+              >
+                Our Mission & Vision
+              </h2>
+              <p class="lead text-light" id="mission-description">
+                Driving change through empowerment and sustainable initiatives.
               </p>
             </div>
           </div>
-        </div>
-
-        <!-- Impact Visualization -->
-        <div class="row align-items-center mt-5">
-          <div class="col-lg-6 mb-4 mb-lg-0 order-lg-2">
-            <div class="impact-map bg-white p-3 rounded-4 shadow-lg">
-              <img src="./static/img/education-graphic.jpg" alt="Global impact map" class="img-fluid rounded-3">
+          <div class="row">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+              <div
+                class="p-4 rounded bg-dark bg-opacity-75 h-100"
+                id="mission-content"
+              >
+                <i class="bi bi-bullseye display-3 text-orange"></i>
+                <h3 class="fw-bold mb-3 text-orange">Our Mission</h3>
+                <p class="text-light">
+                  Our mission is to empower individuals and communities to lead
+                  sustainable and impactful changes, supporting education,
+                  healthcare, and climate resilience across the globe.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div
+                class="p-4 rounded bg-dark bg-opacity-75 h-100"
+                id="vision-content"
+              >
+                <i class="bi bi-lightbulb display-3 accent-color"></i>
+                <h3 class="fw-bold mb-3 accent-color">Our Vision</h3>
+                <p class="text-light">
+                  We envision a world where every individual has the opportunity
+                  to create positive change, leading to a future full of hope,
+                  equality, and sustainability for all.
+                </p>
+              </div>
             </div>
           </div>
-          <div class="col-lg-6">
-            <h3 class="h2 mb-4">Where We've Made a Difference</h3>
-            <p class="lead mb-4">Our educational initiatives have reached communities across the globe, focusing on
-              areas with greatest need.</p>
-
-            <!-- Mini stats bars -->
-            <div class="impact-stat-bar mb-3">
-              <div class="d-flex justify-content-between align-items-center mb-1">
-                <span class="fw-bold">Education Access</span>
-                <span class="badge bg-primary rounded-pill">78%</span>
-              </div>
-              <div class="progress">
-                <div class="progress-bar bg-primary" title="Progress bar" role="progressbar" style="width: 78%"></div>
+        </div>
+      </section>
+      <section id="impact" class="py-5 bg-neutral-200">
+        <div class="container">
+          <div class="row justify-content-center mb-5 text-center">
+            <div class="col-lg-8">
+              <span
+                class="badge bg-primary-light text-primary mb-3 px-3 py-2 rounded-pill"
+                >OUR IMPACT</span
+              >
+              <h2 class="display-4 fw-bold">Making Real Change</h2>
+              <p class="lead text-muted">
+                Measurable results that transform lives and communities
+                globally.
+              </p>
+            </div>
+          </div>
+          <div class="row g-4 mb-5">
+            <div class="col-md-4">
+              <div
+                class="impact-card h-100 bg-white rounded-4 shadow-hover p-4 text-center"
+              >
+                <div class="impact-icon-wrapper mb-4">
+                  <div
+                    class="impact-icon bg-primary-light p-3 rounded-circle d-inline-flex justify-content-center align-items-center"
+                  >
+                    <i class="bi bi-people-fill text-primary display-6"></i>
+                  </div>
+                </div>
+                <h3 class="fw-bold h2 mb-3">
+                  <div class="d-flex align-items-center justify-content-center">
+                    <span class="counter" data-target="50000">0</span
+                    ><span class="ms-2">+</span>
+                  </div>
+                  <div class="text-muted h5 mt-2">Lives Impacted</div>
+                </h3>
+                <div class="progress mb-3">
+                  <div
+                    class="progress-bar bg-primary"
+                    role="progressbar"
+                    style="width: 90%"
+                    title="Progress bar"
+                    aria-valuenow="90"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <p class="text-muted">
+                  Individuals empowered through education, resources, and
+                  opportunity creation.
+                </p>
               </div>
             </div>
 
-            <div class="impact-stat-bar mb-3">
-              <div class="d-flex justify-content-between align-items-center mb-1">
-                <span class="fw-bold">Community Development</span>
-                <span class="badge bg-secondary rounded-pill">65%</span>
-              </div>
-              <div class="progress">
-                <div class="progress-bar bg-secondary" title="Progress bar" role="progressbar" style="width: 65%"></div>
+            <div class="col-md-4">
+              <div
+                class="impact-card h-100 bg-white rounded-4 shadow-hover p-4 text-center"
+              >
+                <div class="impact-icon-wrapper mb-4">
+                  <div
+                    class="impact-icon bg-secondary-light p-3 rounded-circle d-inline-flex justify-content-center align-items-center"
+                  >
+                    <i
+                      class="bi bi-globe-americas text-secondary display-6"
+                    ></i>
+                  </div>
+                </div>
+                <h3 class="fw-bold h2 mb-3">
+                  <div class="d-flex align-items-center justify-content-center">
+                    <span class="counter" data-target="25">0</span>
+                  </div>
+                  <div class="text-muted h5 mt-2">Countries Served</div>
+                </h3>
+                <div class="progress mb-3">
+                  <div
+                    class="progress-bar bg-secondary"
+                    role="progressbar"
+                    title="Progress bar"
+                    style="width: 45%"
+                    aria-valuenow="45"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <p class="text-muted">
+                  Our global reach spans across 5 continents, bringing
+                  educational resources where they're needed most.
+                </p>
               </div>
             </div>
 
-            <div class="impact-stat-bar mb-3">
-              <div class="d-flex justify-content-between align-items-center mb-1">
-                <span class="fw-bold">Healthcare Initiatives</span>
-                <span class="badge bg-primary rounded-pill">50%</span>
+            <div class="col-md-4">
+              <div
+                class="impact-card h-100 bg-white rounded-4 shadow-hover p-4 text-center"
+              >
+                <div class="impact-icon-wrapper mb-4">
+                  <div
+                    class="impact-icon bg-primary-light p-3 rounded-circle d-inline-flex justify-content-center align-items-center"
+                  >
+                    <i class="bi bi-heart-fill text-primary display-6"></i>
+                  </div>
+                </div>
+                <h3 class="fw-bold h2 mb-3">
+                  <div class="d-flex align-items-center justify-content-center">
+                    <span class="counter" data-target="1000">0</span>
+                  </div>
+                  <div class="text-muted h5 mt-2">Volunteers</div>
+                </h3>
+                <div class="progress mb-3">
+                  <div
+                    class="progress-bar bg-primary"
+                    role="progressbar"
+                    title="Progress bar"
+                    style="width: 75%"
+                    aria-valuenow="75"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <p class="text-muted">
+                  Dedicated changemakers contributing their time, skills, and
+                  passion to our mission.
+                </p>
               </div>
-              <div class="progress" style="height: 8px;">
-                <div class="progress-bar bg-primary" role="progressbar" title="Progress bar" style="width: 50%"></div>
+            </div>
+          </div>
+
+          <!-- Impact Visualization -->
+          <div class="row align-items-center mt-5">
+            <div class="col-lg-6 mb-4 mb-lg-0 order-lg-2">
+              <div class="impact-map bg-white p-3 rounded-4 shadow-lg">
+                <img
+                  src="./static/img/education-graphic.jpg"
+                  alt="Global impact map"
+                  class="img-fluid rounded-3"
+                />
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <h3 class="h2 mb-4">Where We've Made a Difference</h3>
+              <p class="lead mb-4">
+                Our educational initiatives have reached communities across the
+                globe, focusing on areas with greatest need.
+              </p>
+
+              <!-- Mini stats bars -->
+              <div class="impact-stat-bar mb-3">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-1"
+                >
+                  <span class="fw-bold">Education Access</span>
+                  <span class="badge bg-primary rounded-pill">78%</span>
+                </div>
+                <div class="progress">
+                  <div
+                    class="progress-bar bg-primary"
+                    title="Progress bar"
+                    role="progressbar"
+                    style="width: 78%"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="impact-stat-bar mb-3">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-1"
+                >
+                  <span class="fw-bold">Community Development</span>
+                  <span class="badge bg-secondary rounded-pill">65%</span>
+                </div>
+                <div class="progress">
+                  <div
+                    class="progress-bar bg-secondary"
+                    title="Progress bar"
+                    role="progressbar"
+                    style="width: 65%"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="impact-stat-bar mb-3">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-1"
+                >
+                  <span class="fw-bold">Healthcare Initiatives</span>
+                  <span class="badge bg-primary rounded-pill">50%</span>
+                </div>
+                <div class="progress" style="height: 8px">
+                  <div
+                    class="progress-bar bg-primary"
+                    role="progressbar"
+                    title="Progress bar"
+                    style="width: 50%"
+                  ></div>
+                </div>
+              </div>
+
+              <a href="#" class="btn btn-outline-primary rounded-pill mt-3"
+                >View Detailed Impact Report</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="education-hub" class="py-5 bg-white">
+        <div class="container">
+          <div class="row justify-content-center mb-5">
+            <div class="col-lg-8 text-center">
+              <span
+                class="badge bg-primary-light text-primary mb-3 px-3 py-2 rounded-pill"
+                >KNOWLEDGE CENTER</span
+              >
+              <h2 class="display-4 fw-bold">Educational Resources</h2>
+              <p class="lead text-muted">
+                Explore our collection of resources designed to inform, educate,
+                and inspire action.
+              </p>
+            </div>
+          </div>
+
+          <!-- Resource Categories -->
+          <div class="row g-4 mb-5">
+            <div class="col-md-4">
+              <div class="card h-100 border-0 shadow-hover">
+                <div class="card-body p-4">
+                  <div
+                    class="feature-icon bg-primary-light p-3 rounded-circle mb-4"
+                  >
+                    <i class="bi bi-journal-text text-primary fs-3"></i>
+                  </div>
+                  <h3 class="card-title h4 mb-3">Learning Materials</h3>
+                  <p class="card-text text-muted">
+                    Access curriculum, lesson plans, and educational modules on
+                    sustainability, community development, and social
+                    entrepreneurship.
+                  </p>
+                  <a href="#" class="btn btn-link text-primary p-0"
+                    >Browse Library <i class="bi bi-arrow-right"></i
+                  ></a>
+                </div>
               </div>
             </div>
 
-            <a href="#" class="btn btn-outline-primary rounded-pill mt-3">View Detailed Impact Report</a>
+            <div class="col-md-4">
+              <div class="card h-100 border-0 shadow-hover">
+                <div class="card-body p-4">
+                  <div
+                    class="feature-icon bg-secondary-light p-3 rounded-circle mb-4"
+                  >
+                    <i class="bi bi-play-circle text-secondary fs-3"></i>
+                  </div>
+                  <h3 class="card-title h4 mb-3">Interactive Webinars</h3>
+                  <p class="card-text text-muted">
+                    Join our expert-led webinars on current global challenges,
+                    innovative solutions, and practical action steps.
+                  </p>
+                  <a href="#" class="btn btn-link text-secondary p-0"
+                    >View Schedule <i class="bi bi-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card h-100 border-0 shadow-hover">
+                <div class="card-body p-4">
+                  <div
+                    class="feature-icon bg-primary-light p-3 rounded-circle mb-4"
+                  >
+                    <i class="bi bi-graph-up text-primary fs-3"></i>
+                  </div>
+                  <h3 class="card-title h4 mb-3">Impact Research</h3>
+                  <p class="card-text text-muted">
+                    Explore our research findings, case studies, and data
+                    insights on global sustainable development trends.
+                  </p>
+                  <a href="#" class="btn btn-link text-primary p-0"
+                    >Read Reports <i class="bi bi-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Featured Resources -->
+          <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+              <div class="ratio ratio-16x9 rounded shadow-lg overflow-hidden">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/qypLDsYPp0I?si=YayxeXulXaIYa_qR"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                    web-share;
+                  "
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <span
+                class="badge bg-secondary-light text-secondary mb-3 px-3 py-2 rounded-pill"
+                >FEATURED WEBINAR</span
+              >
+              <h3 class="h2 mb-3">
+                Building Sustainable Communities Through Education
+              </h3>
+              <p class="lead">
+                Learn how education initiatives can transform communities and
+                create lasting positive change.
+              </p>
+              <ul class="list-unstyled mb-4">
+                <li class="mb-2">
+                  <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                  Community-led educational programs
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                  Sustainable development practices
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                  Measuring educational impact
+                </li>
+              </ul>
+              <a href="#" class="btn btn-primary rounded-pill"
+                >Watch Webinar <i class="bi bi-play-fill"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="programs" class="py-5 bg-neutral-200">
+        <div class="container">
+          <div class="row justify-content-center mb-5">
+            <div class="col-lg-8 text-center">
+              <span
+                class="badge bg-primary-light text-primary mb-3 px-3 py-2 rounded-pill"
+                >OUR PROGRAMS</span
+              >
+              <h2 class="display-4 fw-bold">Educational Initiatives</h2>
+              <p class="lead text-muted">
+                Our carefully designed programs address key global challenges
+                through education and empowerment.
+              </p>
+            </div>
+          </div>
+
+          <div class="row g-4">
+            <!-- Program Card 1 -->
+            <div class="col-md-6 col-lg-4" data-animation="fadeInUp">
+              <div class="card resource-card h-100 shadow-sm">
+                <div class="card-img-top program-image-wrapper">
+                  <img
+                    src="./static/img/education.jpg"
+                    class="img-fluid"
+                    alt="Students in classroom"
+                  />
+                  <div class="program-category">
+                    <span class="badge bg-primary">Education</span>
+                  </div>
+                </div>
+                <div class="card-body p-4">
+                  <h3 class="card-title h4 mb-3">Future Leaders Academy</h3>
+                  <p class="card-text">
+                    Providing quality education and leadership skills to
+                    underserved communities, preparing students for higher
+                    education and impactful careers.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center mt-3"
+                  >
+                    <a href="#" class="btn btn-link text-primary p-0"
+                      >Learn More</a
+                    >
+                    <span class="text-muted small">12 Locations</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Program Card 2 -->
+            <div
+              class="col-md-6 col-lg-4"
+              data-animation="fadeInUp"
+              data-delay="animate__delay-1s"
+            >
+              <div class="card resource-card h-100 shadow-sm">
+                <div class="card-img-top program-image-wrapper">
+                  <img
+                    src="./static/img/sustainability.jpg"
+                    class="img-fluid"
+                    alt="Community garden"
+                  />
+                  <div class="program-category">
+                    <span class="badge bg-success">Sustainability</span>
+                  </div>
+                </div>
+                <div class="card-body p-4">
+                  <h3 class="card-title h4 mb-3">
+                    Green Communities Initiative
+                  </h3>
+                  <p class="card-text">
+                    Teaching sustainable farming practices and environmental
+                    stewardship to create self-sufficient, eco-friendly
+                    communities.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center mt-3"
+                  >
+                    <a href="#" class="btn btn-link text-primary p-0"
+                      >Learn More</a
+                    >
+                    <span class="text-muted small">8 Countries</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Program Card 3 -->
+            <div
+              class="col-md-6 col-lg-4"
+              data-animation="fadeInUp"
+              data-delay="animate__delay-2s"
+            >
+              <div class="card resource-card h-100 shadow-sm">
+                <div class="card-img-top program-image-wrapper">
+                  <img
+                    src="./static/img/healthcare.jpg"
+                    class="img-fluid"
+                    alt="Health clinic"
+                  />
+                  <div class="program-category">
+                    <span class="badge bg-danger">Healthcare</span>
+                  </div>
+                </div>
+                <div class="card-body p-4">
+                  <h3 class="card-title h4 mb-3">Health Education Network</h3>
+                  <p class="card-text">
+                    Providing healthcare education, resources, and preventative
+                    care information to underserved regions around the world.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center mt-3"
+                  >
+                    <a href="#" class="btn btn-link text-primary p-0"
+                      >Learn More</a
+                    >
+                    <span class="text-muted small">15+ Communities</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center mt-5">
+            <a href="#" class="btn btn-primary rounded-pill px-4 py-2"
+              >View All Programs</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- Success Stories Section -->
+      <section
+        id="testimonials"
+        class="py-5 bg-white position-relative overflow-hidden"
+      >
+        <!-- Background Elements -->
+        <div class="position-absolute top-0 end-0 opacity-10 d-none d-lg-block">
+          <i class="bi bi-quote text-primary" style="font-size: 20rem"></i>
+        </div>
+
+        <div class="container position-relative">
+          <!-- Section Header -->
+          <div class="row justify-content-center mb-5">
+            <div class="col-lg-8 text-center">
+              <span
+                class="badge bg-primary-light text-primary mb-3 px-3 py-2 rounded-pill"
+                >SUCCESS STORIES</span
+              >
+              <h2 class="display-4 fw-bold">Voices of Change</h2>
+              <p class="lead text-muted">
+                Real stories from real people whose lives have been transformed
+                through our programs.
+              </p>
+            </div>
+          </div>
+
+          <!-- Impact Stats Bar -->
+          <div class="row mb-5">
+            <div class="col-12">
+              <div class="bg-primary-light rounded-4 p-4">
+                <div class="row text-center">
+                  <div class="col-6 col-md-3">
+                    <div class="h3 fw-bold text-primary mb-1">98%</div>
+                    <div class="small text-muted">Satisfaction Rate</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="h3 fw-bold text-primary mb-1">50K+</div>
+                    <div class="small text-muted">Lives Changed</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="h3 fw-bold text-primary mb-1">25+</div>
+                    <div class="small text-muted">Countries</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="h3 fw-bold text-primary mb-1">1K+</div>
+                    <div class="small text-muted">Volunteers</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonials Grid -->
+          <div class="row g-4">
+            <!-- Featured Story -->
+            <div class="col-lg-6" data-animation="fadeInLeft">
+              <div
+                class="story-card-featured h-100 bg-primary text-white rounded-4 p-5 position-relative"
+              >
+                <div
+                  class="story-background-pattern position-absolute top-0 start-0 w-100 h-100 opacity-10"
+                ></div>
+                <div class="position-relative z-2">
+                  <div class="d-flex align-items-start mb-4">
+                    <img
+                      src="./static/img/testimonial-images/khanh-Bui.jpg"
+                      alt="Khan Bui"
+                      class="rounded-circle me-4 border border-3 border-white shadow"
+                      width="80"
+                      height="80"
+                      loading="lazy"
+                    />
+                    <div class="flex-grow-1">
+                      <h4 class="fw-bold mb-1">Khan Bui</h4>
+                      <div class="d-flex align-items-center">
+                        <i class="bi bi-geo-alt-fill me-2"></i>
+                        <span>Peru</span>
+                      </div>
+                      <div class="text-white-50 small mt-1">
+                        <i class="bi bi-calendar me-1"></i>Program Graduate 2023
+                      </div>
+                    </div>
+                  </div>
+                  <blockquote class="mb-4">
+                    <i class="bi bi-quote display-4 text-white-50 mb-3"></i>
+                    <p class="lead">
+                      "ChangeMakers didn't just bring clean water to our
+                      village—they brought hope. Today, our children are
+                      healthier, our women can focus on education instead of
+                      walking hours for water, and our entire community has
+                      transformed."
+                    </p>
+                  </blockquote>
+                  <div class="d-flex align-items-center">
+                    <div class="flex-grow-1">
+                      <div class="stars text-warning mb-2">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </div>
+                      <div class="small text-white-75">
+                        Clean Water Initiative
+                      </div>
+                    </div>
+                    <button class="btn btn-outline-light btn-sm rounded-pill">
+                      Read Full Story
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Regular Stories Grid -->
+            <div class="col-lg-6">
+              <div class="row g-4 h-100">
+                <!-- Story 1 -->
+                <div
+                  class="col-12"
+                  data-animation="fadeInRight"
+                  data-delay="animate__delay-1s"
+                >
+                  <div
+                    class="story-card bg-white border-0 rounded-4 p-4 shadow-hover h-100"
+                  >
+                    <div class="d-flex align-items-start">
+                      <img
+                        src="./static/img/testimonial-images/john.jpg"
+                        alt="John"
+                        class="rounded-circle me-3 border border-2 border-primary"
+                        width="60"
+                        height="60"
+                        loading="lazy"
+                      />
+                      <div class="flex-grow-1">
+                        <div
+                          class="d-flex justify-content-between align-items-start mb-2"
+                        >
+                          <div>
+                            <h5 class="fw-bold mb-0">John</h5>
+                            <small class="text-muted d-flex align-items-center">
+                              <i class="bi bi-geo-alt me-1"></i>Brazil
+                            </small>
+                          </div>
+                          <span
+                            class="badge bg-success-light text-success rounded-pill"
+                            >Education</span
+                          >
+                        </div>
+                        <p class="text-muted mb-3">
+                          "I now have the education and resources to support my
+                          family and contribute to my community."
+                        </p>
+                        <div class="d-flex align-items-center">
+                          <div class="stars text-warning me-3">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                          </div>
+                          <small class="text-muted">2 years ago</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Story 2 -->
+                <div
+                  class="col-12"
+                  data-animation="fadeInRight"
+                  data-delay="animate__delay-2s"
+                >
+                  <div
+                    class="story-card bg-white border-0 rounded-4 p-4 shadow-hover h-100"
+                  >
+                    <div class="d-flex align-items-start">
+                      <img
+                        src="./static/img/testimonial-images/sophia.jpg"
+                        alt="Sophia"
+                        class="rounded-circle me-3 border border-2 border-primary"
+                        width="60"
+                        height="60"
+                        loading="lazy"
+                      />
+                      <div class="flex-grow-1">
+                        <div
+                          class="d-flex justify-content-between align-items-start mb-2"
+                        >
+                          <div>
+                            <h5 class="fw-bold mb-0">Sophia</h5>
+                            <small class="text-muted d-flex align-items-center">
+                              <i class="bi bi-geo-alt me-1"></i>South Africa
+                            </small>
+                          </div>
+                          <span
+                            class="badge bg-warning-light text-warning rounded-pill"
+                            >Business</span
+                          >
+                        </div>
+                        <p class="text-muted mb-3">
+                          "The training I received allowed me to start a small
+                          business, and now I'm helping my community thrive."
+                        </p>
+                        <div class="d-flex align-items-center">
+                          <div class="stars text-warning me-3">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                          </div>
+                          <small class="text-muted">1 year ago</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Additional Stories Row -->
+          <div class="row g-4 mt-4">
+            <div class="col-md-4" data-animation="fadeInUp">
+              <div
+                class="story-card-mini bg-secondary-light rounded-4 p-4 text-center h-100"
+              >
+                <img
+                  src="./static/img/testimonial-images/ahmed.jpg"
+                  alt="Ahmed"
+                  class="rounded-circle mx-auto mb-3 border border-3 border-secondary"
+                  width="80"
+                  height="80"
+                  loading="lazy"
+                />
+                <h5 class="fw-bold text-secondary">Ahmed</h5>
+                <p class="small text-muted mb-3">
+                  "Quality healthcare access has made an incredible difference
+                  in our village."
+                </p>
+                <div class="d-flex align-items-center justify-content-center">
+                  <i class="bi bi-geo-alt me-2 text-secondary"></i>
+                  <span class="small">Egypt</span>
+                </div>
+                <span
+                  class="badge bg-danger-light text-danger mt-2 rounded-pill"
+                  >Healthcare</span
+                >
+              </div>
+            </div>
+
+            <div
+              class="col-md-4"
+              data-animation="fadeInUp"
+              data-delay="animate__delay-1s"
+            >
+              <div
+                class="story-card-mini bg-primary-light rounded-4 p-4 text-center h-100"
+              >
+                <img
+                  src="./static/img/testimonial-images/lucia.jpeg"
+                  alt="Lucia"
+                  class="rounded-circle mx-auto mb-3 border border-3 border-primary"
+                  width="80"
+                  height="80"
+                  loading="lazy"
+                />
+                <h5 class="fw-bold text-primary">Lucia</h5>
+                <p class="small text-muted mb-3">
+                  "Thanks to the scholarship program, I'm the first in my family
+                  to go to college."
+                </p>
+                <div class="d-flex align-items-center justify-content-center">
+                  <i class="bi bi-geo-alt me-2 text-primary"></i>
+                  <span class="small">Mexico</span>
+                </div>
+                <span class="badge bg-primary text-white mt-2 rounded-pill"
+                  >Scholarship</span
+                >
+              </div>
+            </div>
+
+            <div
+              class="col-md-4"
+              data-animation="fadeInUp"
+              data-delay="animate__delay-2s"
+            >
+              <div
+                class="story-card-mini bg-success-light rounded-4 p-4 text-center h-100"
+              >
+                <img
+                  src="./static/img/testimonial-images/Lopez.jpg"
+                  alt="Lopez"
+                  class="rounded-circle mx-auto mb-3 border border-3 border-success"
+                  width="80"
+                  height="80"
+                  loading="lazy"
+                />
+                <h5 class="fw-bold text-success">Lopez</h5>
+                <p class="small text-muted mb-3">
+                  "I've been able to access education and change the future for
+                  my children."
+                </p>
+                <div class="d-flex align-items-center justify-content-center">
+                  <i class="bi bi-geo-alt me-2 text-success"></i>
+                  <span class="small">Kenya</span>
+                </div>
+                <span class="badge bg-success text-white mt-2 rounded-pill"
+                  >Education</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Call to Action -->
+          <div class="row justify-content-center mt-5">
+            <div class="col-lg-8 text-center">
+              <div class="bg-neutral-100 rounded-4 p-5">
+                <h3 class="fw-bold mb-3">Ready to Share Your Story?</h3>
+                <p class="text-muted mb-4">
+                  Join thousands who have transformed their communities through
+                  our programs.
+                </p>
+                <div class="d-flex justify-content-center gap-3 flex-wrap">
+                  <button class="btn btn-primary rounded-pill px-4">
+                    Apply for Program
+                  </button>
+                  <button class="btn btn-outline-primary rounded-pill px-4">
+                    Share Your Story
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="call-to-action"
+        class="container-fluid bg-orange text-light py-5 text-center"
+      >
+        <h2 class="display-5 fw-bold mb-4">Be a ChangeMaker Today</h2>
+        <p class="lead mb-4">
+          Join us in making a real impact on the world. Whether you donate or
+          volunteer, every contribution counts in creating a better tomorrow.
+        </p>
+        <div class="d-flex justify-content-center gap-3">
+          <button
+            class="btn btn-light btn-lg animate__animated animate__pulse"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
+            aria-label="Donate Now"
+          >
+            Donate Now
+          </button>
+          <button
+            class="btn btn-outline-light btn-lg mx-2"
+            data-bs-toggle="modal"
+            data-bs-target="#volunteerModal"
+          >
+            Volunteer
+          </button>
+        </div>
+      </section>
+
+      <!-- Donation Modal -->
+      <div
+        class="modal fade"
+        id="staticBackdrop"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="donationModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content border-0 shadow-lg">
+            <!-- Modal Header with Impact Statement -->
+            <div
+              class="modal-header donation-header border-0 text-white position-relative"
+            >
+              <div
+                class="donation-header-bg position-absolute top-0 start-0 w-100 h-100"
+              ></div>
+              <div class="position-relative z-2 w-100">
+                <div class="d-flex justify-content-between align-items-start">
+                  <div>
+                    <h2
+                      class="modal-title fw-bold mb-2"
+                      id="donationModalLabel"
+                    >
+                      <i class="bi bi-heart-fill me-2"></i>Make a Difference
+                      Today
+                    </h2>
+                    <p class="mb-0 opacity-90">
+                      Your support transforms lives across 25+ countries
+                    </p>
+                  </div>
+                  <button
+                    type="button"
+                    class="btn-close btn-close-white"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-body p-4">
+              <!-- Impact Preview -->
+              <div class="donation-impact-preview bg-light rounded-4 p-4 mb-4">
+                <div class="row text-center">
+                  <div class="col-6 col-md-3 mb-3 mb-md-0">
+                    <div class="impact-number text-primary fw-bold h4 mb-1">
+                      $25
+                    </div>
+                    <div class="impact-description small text-muted">
+                      Provides school supplies for 1 child
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3 mb-3 mb-md-0">
+                    <div class="impact-number text-primary fw-bold h4 mb-1">
+                      $50
+                    </div>
+                    <div class="impact-description small text-muted">
+                      Feeds a family for 1 week
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3 mb-3 mb-md-0">
+                    <div class="impact-number text-primary fw-bold h4 mb-1">
+                      $100
+                    </div>
+                    <div class="impact-description small text-muted">
+                      Healthcare for 5 people
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="impact-number text-primary fw-bold h4 mb-1">
+                      $250
+                    </div>
+                    <div class="impact-description small text-muted">
+                      Clean water access for 1 month
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Donation Amount Selection -->
+              <div class="donation-section mb-4">
+                <h5 class="section-title mb-3">
+                  <i class="bi bi-currency-dollar text-primary me-2"></i>Choose
+                  Your Impact
+                </h5>
+
+                <!-- Preset Amounts -->
+                <div class="preset-amounts mb-3">
+                  <div class="row g-2">
+                    <div class="col-6 col-md-3">
+                      <button
+                        type="button"
+                        class="preset-amount-btn btn btn-outline-primary w-100 h-100 py-3"
+                        data-amount="25"
+                      >
+                        <div class="fw-bold">$25</div>
+                        <div class="small">School Supplies</div>
+                      </button>
+                    </div>
+                    <div class="col-6 col-md-3">
+                      <button
+                        type="button"
+                        class="preset-amount-btn btn btn-outline-primary w-100 h-100 py-3"
+                        data-amount="50"
+                      >
+                        <div class="fw-bold">$50</div>
+                        <div class="small">Weekly Meals</div>
+                      </button>
+                    </div>
+                    <div class="col-6 col-md-3">
+                      <button
+                        type="button"
+                        class="preset-amount-btn btn btn-outline-primary w-100 h-100 py-3"
+                        data-amount="100"
+                      >
+                        <div class="fw-bold">$100</div>
+                        <div class="small">Healthcare</div>
+                      </button>
+                    </div>
+                    <div class="col-6 col-md-3">
+                      <button
+                        type="button"
+                        class="preset-amount-btn btn btn-outline-primary w-100 h-100 py-3"
+                        data-amount="250"
+                      >
+                        <div class="fw-bold">$250</div>
+                        <div class="small">Clean Water</div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Custom Amount -->
+                <div class="custom-amount-wrapper">
+                  <label
+                    for="custom-donation-input"
+                    class="form-label fw-semibold"
+                    >Or enter a custom amount:</label
+                  >
+                  <div class="input-group input-group-lg">
+                    <span
+                      class="input-group-text bg-primary text-white border-primary"
+                      >$</span
+                    >
+                    <input
+                      type="number"
+                      class="form-control border-primary"
+                      id="custom-donation-input"
+                      placeholder="Enter amount"
+                      min="1"
+                      max="10000"
+                    />
+                  </div>
+                  <div class="form-text text-muted">
+                    <i class="bi bi-shield-check me-1"></i>100% of your donation
+                    goes directly to our programs
+                  </div>
+                </div>
+              </div>
+
+              <!-- Donation Frequency -->
+              <div class="donation-section mb-4">
+                <h5 class="section-title mb-3">
+                  <i class="bi bi-arrow-repeat text-primary me-2"></i>Donation
+                  Frequency
+                </h5>
+                <div class="frequency-options">
+                  <div
+                    class="btn-group w-100"
+                    role="group"
+                    aria-label="Donation frequency"
+                  >
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="frequency"
+                      id="one-time"
+                      value="one-time"
+                      checked
+                    />
+                    <label class="btn btn-outline-secondary" for="one-time">
+                      <i class="bi bi-calendar-event me-2"></i>One Time
+                    </label>
+
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="frequency"
+                      id="monthly"
+                      value="monthly"
+                    />
+                    <label class="btn btn-outline-secondary" for="monthly">
+                      <i class="bi bi-arrow-clockwise me-2"></i>Monthly
+                      <span class="badge bg-success ms-1">Popular</span>
+                    </label>
+
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="frequency"
+                      id="yearly"
+                      value="yearly"
+                    />
+                    <label class="btn btn-outline-secondary" for="yearly">
+                      <i class="bi bi-calendar-check me-2"></i>Yearly
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Payment Methods -->
+              <div class="donation-section mb-4">
+                <h5 class="section-title mb-3">
+                  <i class="bi bi-credit-card text-primary me-2"></i>Payment
+                  Method
+                </h5>
+                <div class="payment-methods-grid">
+                  <div class="row g-3">
+                    <div class="col-6 col-md-4">
+                      <button
+                        type="button"
+                        class="payment-method-btn btn btn-light w-100 h-100 p-3 position-relative"
+                        data-method="card"
+                      >
+                        <img
+                          src="./static/img/payment-img/credit-card.svg"
+                          alt="Credit Card"
+                          class="payment-icon mb-2"
+                        />
+                        <div class="small fw-semibold">Card</div>
+                        <div
+                          class="payment-check position-absolute top-0 end-0 m-2"
+                        >
+                          <i
+                            class="bi bi-check-circle-fill text-success d-none"
+                          ></i>
+                        </div>
+                      </button>
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <button
+                        type="button"
+                        class="payment-method-btn btn btn-light w-100 h-100 p-3 position-relative"
+                        data-method="paypal"
+                      >
+                        <img
+                          src="./static/img/payment-img/icons8-paypal-logo.svg"
+                          alt="PayPal"
+                          class="payment-icon mb-2"
+                        />
+                        <div class="small fw-semibold">PayPal</div>
+                        <div
+                          class="payment-check position-absolute top-0 end-0 m-2"
+                        >
+                          <i
+                            class="bi bi-check-circle-fill text-success d-none"
+                          ></i>
+                        </div>
+                      </button>
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <button
+                        type="button"
+                        class="payment-method-btn btn btn-light w-100 h-100 p-3 position-relative"
+                        data-method="apple"
+                      >
+                        <img
+                          src="./static/img/payment-img/icons8-apple-pay.svg"
+                          alt="Apple Pay"
+                          class="payment-icon mb-2"
+                        />
+                        <div class="small fw-semibold">Apple Pay</div>
+                        <div
+                          class="payment-check position-absolute top-0 end-0 m-2"
+                        >
+                          <i
+                            class="bi bi-check-circle-fill text-success d-none"
+                          ></i>
+                        </div>
+                      </button>
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <button
+                        type="button"
+                        class="payment-method-btn btn btn-light w-100 h-100 p-3 position-relative"
+                        data-method="google"
+                      >
+                        <img
+                          src="./static/img/payment-img/icons8-google-pay.svg"
+                          alt="Google Pay"
+                          class="payment-icon mb-2"
+                        />
+                        <div class="small fw-semibold">Google Pay</div>
+                        <div
+                          class="payment-check position-absolute top-0 end-0 m-2"
+                        >
+                          <i
+                            class="bi bi-check-circle-fill text-success d-none"
+                          ></i>
+                        </div>
+                      </button>
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <button
+                        type="button"
+                        class="payment-method-btn btn btn-light w-100 h-100 p-3 position-relative"
+                        data-method="mpesa"
+                      >
+                        <img
+                          src="./static/img/payment-img/mpesa-logo.png"
+                          alt="M-Pesa"
+                          class="payment-icon mb-2"
+                        />
+                        <div class="small fw-semibold">M-Pesa</div>
+                        <div
+                          class="payment-check position-absolute top-0 end-0 m-2"
+                        >
+                          <i
+                            class="bi bi-check-circle-fill text-success d-none"
+                          ></i>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Donor Information (Optional) -->
+              <div class="donation-section">
+                <h5 class="section-title mb-3">
+                  <i class="bi bi-person text-primary me-2"></i>Donor
+                  Information
+                  <span class="badge bg-light text-dark ms-2">Optional</span>
+                </h5>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="donor-name"
+                      placeholder="Full Name (Optional)"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="donor-email"
+                      placeholder="Email (For receipt)"
+                    />
+                  </div>
+                  <div class="col-12">
+                    <label for="donor-phone" class="form-label"
+                      >M-Pesa phone number</label
+                    >
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="donor-phone"
+                      placeholder="e.g. 0712345678"
+                      autocomplete="tel"
+                      inputmode="tel"
+                    />
+                    <div class="form-text text-muted">
+                      Required when M-Pesa is selected. Use a Safaricom number.
+                    </div>
+                  </div>
+                </div>
+                <div class="form-check mt-3">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="anonymous-donation"
+                  />
+                  <label
+                    class="form-check-label text-muted"
+                    for="anonymous-donation"
+                  >
+                    Make this donation anonymous
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="newsletter-signup"
+                  />
+                  <label
+                    class="form-check-label text-muted"
+                    for="newsletter-signup"
+                  >
+                    Subscribe to our newsletter for impact updates
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Enhanced Footer -->
+            <div class="modal-footer donation-footer border-0 bg-light p-4">
+              <div class="w-100">
+                <!-- Donation Summary -->
+                <div class="donation-summary bg-white rounded-3 p-3 mb-3">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <div class="fw-bold">Donation Summary</div>
+                      <div class="text-muted small">
+                        <span id="summary-frequency">One-time</span> donation
+                      </div>
+                    </div>
+                    <div class="text-end">
+                      <div class="h4 fw-bold text-primary mb-0">
+                        $<span id="summary-amount">25</span>
+                      </div>
+                      <div class="text-muted small" id="summary-impact">
+                        Provides school supplies for 1 child
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="d-flex gap-3">
+                  <button
+                    type="button"
+                    class="btn btn-light flex-fill"
+                    data-bs-dismiss="modal"
+                  >
+                    <i class="bi bi-arrow-left me-2"></i>Cancel
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-primary flex-fill btn-lg donate-now-btn"
+                  >
+                    <i class="bi bi-heart-fill me-2"></i>
+                    <span>Donate Now</span>
+                    <i class="bi bi-arrow-right ms-2"></i>
+                  </button>
+                </div>
+
+                <!-- Security Notice -->
+                <div class="text-center mt-3">
+                  <small class="text-muted">
+                    <i class="bi bi-shield-check me-1"></i>
+                    Secure 256-bit SSL encryption • Tax-deductible • Instant
+                    receipt
+                  </small>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-    <section id="education-hub" class="py-5 bg-white">
+      <!-- Volunteer modal -->
+      <div
+        class="modal fade"
+        id="volunteerModal"
+        tabindex="-1"
+        aria-labelledby="volunteerModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content rounded-3 shadow-lg border-0">
+            <div class="modal-header border-0">
+              <h2
+                class="modal-title w-100 text-center fw-bold"
+                id="volunteerModalLabel"
+              >
+                Volunteer with ChangeMakers
+              </h2>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body text-center">
+              <p class="lead text-muted">
+                Join our team and make a difference. Fill out the form below to
+                get started.
+              </p>
+              <form>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="volunteer-name"
+                    placeholder="Your Name"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="volunteer-email"
+                    placeholder="Your Email"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    id="volunteer-message"
+                    rows="3"
+                    placeholder="Why do you want to volunteer?"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-dark w-100">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-dark text-light pt-5 pb-4">
       <div class="container">
-        <div class="row justify-content-center mb-5">
-          <div class="col-lg-8 text-center">
-            <span class="badge bg-primary-light text-primary mb-3 px-3 py-2 rounded-pill">KNOWLEDGE CENTER</span>
-            <h2 class="display-4 fw-bold">Educational Resources</h2>
-            <p class="lead text-muted">Explore our collection of resources designed to inform, educate, and inspire
-              action.</p>
-          </div>
-        </div>
-
-        <!-- Resource Categories -->
-        <div class="row g-4 mb-5">
-          <div class="col-md-4">
-            <div class="card h-100 border-0 shadow-hover">
-              <div class="card-body p-4">
-                <div class="feature-icon bg-primary-light p-3 rounded-circle mb-4">
-                  <i class="bi bi-journal-text text-primary fs-3"></i>
-                </div>
-                <h3 class="card-title h4 mb-3">Learning Materials</h3>
-                <p class="card-text text-muted">Access curriculum, lesson plans, and educational modules on
-                  sustainability, community development, and social entrepreneurship.</p>
-                <a href="#" class="btn btn-link text-primary p-0">Browse Library <i class="bi bi-arrow-right"></i></a>
-              </div>
+        <div class="row g-4">
+          <!-- Organization Info -->
+          <div class="col-lg-4">
+            <div class="mb-4">
+              <h5
+                class="text-uppercase mb-3 border-start border-primary border-4 ps-3"
+              >
+                ChangeMakers
+              </h5>
+              <p class="text-light opacity-75">
+                Empowering communities through education, sustainability
+                initiatives, and local engagement.
+              </p>
+            </div>
+            <div class="social-links d-flex gap-3 mb-4">
+              <a
+                href="#"
+                class="social-icon"
+                aria-label="Visit our Facebook page"
+              >
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a
+                href="#"
+                class="social-icon"
+                aria-label="Visit our Twitter page"
+              >
+                <i class="bi bi-twitter-x"></i>
+              </a>
+              <a
+                href="#"
+                class="social-icon"
+                aria-label="Visit our Instagram page"
+              >
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a
+                href="#"
+                class="social-icon"
+                aria-label="Visit our LinkedIn page"
+              >
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a
+                href="#"
+                class="social-icon"
+                aria-label="Visit our YouTube channel"
+              >
+                <i class="bi bi-youtube"></i>
+              </a>
+            </div>
+            <div class="d-flex align-items-center">
+              <i class="bi bi-geo-alt text-primary me-2"></i>
+              <span class="text-light opacity-75"
+                >123 Impact Street, Nairobi, Kenya</span
+              >
             </div>
           </div>
 
-          <div class="col-md-4">
-            <div class="card h-100 border-0 shadow-hover">
-              <div class="card-body p-4">
-                <div class="feature-icon bg-secondary-light p-3 rounded-circle mb-4">
-                  <i class="bi bi-play-circle text-secondary fs-3"></i>
-                </div>
-                <h3 class="card-title h4 mb-3">Interactive Webinars</h3>
-                <p class="card-text text-muted">Join our expert-led webinars on current global challenges, innovative
-                  solutions, and practical action steps.</p>
-                <a href="#" class="btn btn-link text-secondary p-0">View Schedule <i class="bi bi-arrow-right"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card h-100 border-0 shadow-hover">
-              <div class="card-body p-4">
-                <div class="feature-icon bg-primary-light p-3 rounded-circle mb-4">
-                  <i class="bi bi-graph-up text-primary fs-3"></i>
-                </div>
-                <h3 class="card-title h4 mb-3">Impact Research</h3>
-                <p class="card-text text-muted">Explore our research findings, case studies, and data insights on global
-                  sustainable development trends.</p>
-                <a href="#" class="btn btn-link text-primary p-0">Read Reports <i class="bi bi-arrow-right"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Featured Resources -->
-        <div class="row align-items-center">
-          <div class="col-lg-6 mb-4 mb-lg-0">
-            <div class="ratio ratio-16x9 rounded shadow-lg overflow-hidden">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/qypLDsYPp0I?si=YayxeXulXaIYa_qR"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <span class="badge bg-secondary-light text-secondary mb-3 px-3 py-2 rounded-pill">FEATURED WEBINAR</span>
-            <h3 class="h2 mb-3">Building Sustainable Communities Through Education</h3>
-            <p class="lead">Learn how education initiatives can transform communities and create lasting positive
-              change.</p>
-            <ul class="list-unstyled mb-4">
-              <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Community-led educational
-                programs</li>
-              <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Sustainable development
-                practices</li>
-              <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Measuring educational impact
+          <!-- Quick Links -->
+          <div class="col-sm-6 col-md-4 col-lg-2">
+            <h5
+              class="text-uppercase mb-3 border-start border-primary border-4 ps-3"
+            >
+              Get Involved
+            </h5>
+            <ul class="list-unstyled footer-links">
+              <li class="mb-2"><a href="#" class="footer-link">Donate</a></li>
+              <li class="mb-2">
+                <a href="#" class="footer-link">Volunteer</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="footer-link">Partnerships</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="footer-link">Fundraise</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="footer-link">Corporate Support</a>
               </li>
             </ul>
-            <a href="#" class="btn btn-primary rounded-pill">Watch Webinar <i class="bi bi-play-fill"></i></a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="programs" class="py-5 bg-neutral-200">
-      <div class="container">
-        <div class="row justify-content-center mb-5">
-          <div class="col-lg-8 text-center">
-            <span class="badge bg-primary-light text-primary mb-3 px-3 py-2 rounded-pill">OUR PROGRAMS</span>
-            <h2 class="display-4 fw-bold">Educational Initiatives</h2>
-            <p class="lead text-muted">Our carefully designed programs address key global challenges through education
-              and empowerment.</p>
-          </div>
-        </div>
-
-        <div class="row g-4">
-          <!-- Program Card 1 -->
-          <div class="col-md-6 col-lg-4" data-animation="fadeInUp">
-            <div class="card resource-card h-100 shadow-sm">
-              <div class="card-img-top program-image-wrapper">
-                <img src="./static/img/education.jpg" class="img-fluid" alt="Students in classroom">
-                <div class="program-category">
-                  <span class="badge bg-primary">Education</span>
-                </div>
-              </div>
-              <div class="card-body p-4">
-                <h3 class="card-title h4 mb-3">Future Leaders Academy</h3>
-                <p class="card-text">Providing quality education and leadership skills to underserved communities,
-                  preparing students for higher education and impactful careers.</p>
-                <div class="d-flex justify-content-between align-items-center mt-3">
-                  <a href="#" class="btn btn-link text-primary p-0">Learn More</a>
-                  <span class="text-muted small">12 Locations</span>
-                </div>
-              </div>
-            </div>
           </div>
 
-          <!-- Program Card 2 -->
-          <div class="col-md-6 col-lg-4" data-animation="fadeInUp" data-delay="animate__delay-1s">
-            <div class="card resource-card h-100 shadow-sm">
-              <div class="card-img-top program-image-wrapper">
-                <img src="./static/img/sustainability.jpg" class="img-fluid" alt="Community garden">
-                <div class="program-category">
-                  <span class="badge bg-success">Sustainability</span>
-                </div>
-              </div>
-              <div class="card-body p-4">
-                <h3 class="card-title h4 mb-3">Green Communities Initiative</h3>
-                <p class="card-text">Teaching sustainable farming practices and environmental stewardship to create
-                  self-sufficient, eco-friendly communities.</p>
-                <div class="d-flex justify-content-between align-items-center mt-3">
-                  <a href="#" class="btn btn-link text-primary p-0">Learn More</a>
-                  <span class="text-muted small">8 Countries</span>
-                </div>
-              </div>
-            </div>
+          <!-- Educational Resources -->
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <h5
+              class="text-uppercase mb-3 border-start border-primary border-4 ps-3"
+            >
+              Education Center
+            </h5>
+            <ul class="list-unstyled footer-links">
+              <li class="mb-2">
+                <a href="#" class="footer-link">Resource Library</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="footer-link">Online Courses</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="footer-link">Research Publications</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="footer-link">SDG Resources</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="footer-link">Educational Blog</a>
+              </li>
+            </ul>
           </div>
 
-          <!-- Program Card 3 -->
-          <div class="col-md-6 col-lg-4" data-animation="fadeInUp" data-delay="animate__delay-2s">
-            <div class="card resource-card h-100 shadow-sm">
-              <div class="card-img-top program-image-wrapper">
-                <img src="./static/img/healthcare.jpg" class="img-fluid" alt="Health clinic">
-                <div class="program-category">
-                  <span class="badge bg-danger">Healthcare</span>
-                </div>
+          <!-- Newsletter -->
+          <div class="col-md-4 col-lg-3">
+            <h5
+              class="text-uppercase mb-3 border-start border-primary border-4 ps-3"
+            >
+              Stay Informed
+            </h5>
+            <p class="text-light opacity-75 mb-3">
+              Subscribe to our newsletter for the latest resources and updates.
+            </p>
+            <form class="mb-3">
+              <div class="input-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Your email"
+                  aria-label="Your email"
+                  required
+                />
+                <button class="btn btn-primary" type="submit">Subscribe</button>
               </div>
-              <div class="card-body p-4">
-                <h3 class="card-title h4 mb-3">Health Education Network</h3>
-                <p class="card-text">Providing healthcare education, resources, and preventative care information to
-                  underserved regions around the world.</p>
-                <div class="d-flex justify-content-between align-items-center mt-3">
-                  <a href="#" class="btn btn-link text-primary p-0">Learn More</a>
-                  <span class="text-muted small">15+ Communities</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="text-center mt-5">
-          <a href="#" class="btn btn-primary rounded-pill px-4 py-2">View All Programs</a>
-        </div>
-      </div>
-    </section>
-    <!-- Success Stories Section -->
-    <section id="testimonials" class="py-5 bg-white position-relative overflow-hidden">
-      <!-- Background Elements -->
-      <div class="position-absolute top-0 end-0 opacity-10 d-none d-lg-block">
-        <i class="bi bi-quote text-primary" style="font-size: 20rem;"></i>
-      </div>
-
-      <div class="container position-relative">
-        <!-- Section Header -->
-        <div class="row justify-content-center mb-5">
-          <div class="col-lg-8 text-center">
-            <span class="badge bg-primary-light text-primary mb-3 px-3 py-2 rounded-pill">SUCCESS STORIES</span>
-            <h2 class="display-4 fw-bold">Voices of Change</h2>
-            <p class="lead text-muted">Real stories from real people whose lives have been transformed through our
-              programs.</p>
-          </div>
-        </div>
-
-        <!-- Impact Stats Bar -->
-        <div class="row mb-5">
-          <div class="col-12">
-            <div class="bg-primary-light rounded-4 p-4">
-              <div class="row text-center">
-                <div class="col-6 col-md-3">
-                  <div class="h3 fw-bold text-primary mb-1">98%</div>
-                  <div class="small text-muted">Satisfaction Rate</div>
-                </div>
-                <div class="col-6 col-md-3">
-                  <div class="h3 fw-bold text-primary mb-1">50K+</div>
-                  <div class="small text-muted">Lives Changed</div>
-                </div>
-                <div class="col-6 col-md-3">
-                  <div class="h3 fw-bold text-primary mb-1">25+</div>
-                  <div class="small text-muted">Countries</div>
-                </div>
-                <div class="col-6 col-md-3">
-                  <div class="h3 fw-bold text-primary mb-1">1K+</div>
-                  <div class="small text-muted">Volunteers</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Testimonials Grid -->
-        <div class="row g-4">
-          <!-- Featured Story -->
-          <div class="col-lg-6" data-animation="fadeInLeft">
-            <div class="story-card-featured h-100 bg-primary text-white rounded-4 p-5 position-relative">
-              <div class="story-background-pattern position-absolute top-0 start-0 w-100 h-100 opacity-10"></div>
-              <div class="position-relative z-2">
-                <div class="d-flex align-items-start mb-4">
-                  <img src="./static/img/testimonial-images/khanh-Bui.jpg" alt="Khan Bui"
-                    class="rounded-circle me-4 border border-3 border-white shadow" width="80" height="80"
-                    loading="lazy">
-                  <div class="flex-grow-1">
-                    <h4 class="fw-bold mb-1">Khan Bui</h4>
-                    <div class="d-flex align-items-center">
-                      <i class="bi bi-geo-alt-fill me-2"></i>
-                      <span>Peru</span>
-                    </div>
-                    <div class="text-white-50 small mt-1">
-                      <i class="bi bi-calendar me-1"></i>Program Graduate 2023
-                    </div>
-                  </div>
-                </div>
-                <blockquote class="mb-4">
-                  <i class="bi bi-quote display-4 text-white-50 mb-3"></i>
-                  <p class="lead">"ChangeMakers didn't just bring clean water to our village—they brought hope. Today,
-                    our children are healthier, our women can focus on education instead of walking hours for water, and
-                    our entire community has transformed."</p>
-                </blockquote>
-                <div class="d-flex align-items-center">
-                  <div class="flex-grow-1">
-                    <div class="stars text-warning mb-2">
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                    </div>
-                    <div class="small text-white-75">Clean Water Initiative</div>
-                  </div>
-                  <button class="btn btn-outline-light btn-sm rounded-pill">Read Full Story</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Regular Stories Grid -->
-          <div class="col-lg-6">
-            <div class="row g-4 h-100">
-              <!-- Story 1 -->
-              <div class="col-12" data-animation="fadeInRight" data-delay="animate__delay-1s">
-                <div class="story-card bg-white border-0 rounded-4 p-4 shadow-hover h-100">
-                  <div class="d-flex align-items-start">
-                    <img src="./static/img/testimonial-images/john.jpg" alt="John"
-                      class="rounded-circle me-3 border border-2 border-primary" width="60" height="60" loading="lazy">
-                    <div class="flex-grow-1">
-                      <div class="d-flex justify-content-between align-items-start mb-2">
-                        <div>
-                          <h5 class="fw-bold mb-0">John</h5>
-                          <small class="text-muted d-flex align-items-center">
-                            <i class="bi bi-geo-alt me-1"></i>Brazil
-                          </small>
-                        </div>
-                        <span class="badge bg-success-light text-success rounded-pill">Education</span>
-                      </div>
-                      <p class="text-muted mb-3">"I now have the education and resources to support my family and
-                        contribute to my community."</p>
-                      <div class="d-flex align-items-center">
-                        <div class="stars text-warning me-3">
-                          <i class="bi bi-star-fill"></i>
-                          <i class="bi bi-star-fill"></i>
-                          <i class="bi bi-star-fill"></i>
-                          <i class="bi bi-star-fill"></i>
-                          <i class="bi bi-star-fill"></i>
-                        </div>
-                        <small class="text-muted">2 years ago</small>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Story 2 -->
-              <div class="col-12" data-animation="fadeInRight" data-delay="animate__delay-2s">
-                <div class="story-card bg-white border-0 rounded-4 p-4 shadow-hover h-100">
-                  <div class="d-flex align-items-start">
-                    <img src="./static/img/testimonial-images/sophia.jpg" alt="Sophia"
-                      class="rounded-circle me-3 border border-2 border-primary" width="60" height="60" loading="lazy">
-                    <div class="flex-grow-1">
-                      <div class="d-flex justify-content-between align-items-start mb-2">
-                        <div>
-                          <h5 class="fw-bold mb-0">Sophia</h5>
-                          <small class="text-muted d-flex align-items-center">
-                            <i class="bi bi-geo-alt me-1"></i>South Africa
-                          </small>
-                        </div>
-                        <span class="badge bg-warning-light text-warning rounded-pill">Business</span>
-                      </div>
-                      <p class="text-muted mb-3">"The training I received allowed me to start a small business, and now
-                        I'm helping my community thrive."</p>
-                      <div class="d-flex align-items-center">
-                        <div class="stars text-warning me-3">
-                          <i class="bi bi-star-fill"></i>
-                          <i class="bi bi-star-fill"></i>
-                          <i class="bi bi-star-fill"></i>
-                          <i class="bi bi-star-fill"></i>
-                          <i class="bi bi-star-fill"></i>
-                        </div>
-                        <small class="text-muted">1 year ago</small>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Additional Stories Row -->
-        <div class="row g-4 mt-4">
-          <div class="col-md-4" data-animation="fadeInUp">
-            <div class="story-card-mini bg-secondary-light rounded-4 p-4 text-center h-100">
-              <img src="./static/img/testimonial-images/ahmed.jpg" alt="Ahmed"
-                class="rounded-circle mx-auto mb-3 border border-3 border-secondary" width="80" height="80"
-                loading="lazy">
-              <h5 class="fw-bold text-secondary">Ahmed</h5>
-              <p class="small text-muted mb-3">"Quality healthcare access has made an incredible difference in our
-                village."</p>
-              <div class="d-flex align-items-center justify-content-center">
-                <i class="bi bi-geo-alt me-2 text-secondary"></i>
-                <span class="small">Egypt</span>
-              </div>
-              <span class="badge bg-danger-light text-danger mt-2 rounded-pill">Healthcare</span>
-            </div>
-          </div>
-
-          <div class="col-md-4" data-animation="fadeInUp" data-delay="animate__delay-1s">
-            <div class="story-card-mini bg-primary-light rounded-4 p-4 text-center h-100">
-              <img src="./static/img/testimonial-images/lucia.jpeg" alt="Lucia"
-                class="rounded-circle mx-auto mb-3 border border-3 border-primary" width="80" height="80"
-                loading="lazy">
-              <h5 class="fw-bold text-primary">Lucia</h5>
-              <p class="small text-muted mb-3">"Thanks to the scholarship program, I'm the first in my family to go to
-                college."</p>
-              <div class="d-flex align-items-center justify-content-center">
-                <i class="bi bi-geo-alt me-2 text-primary"></i>
-                <span class="small">Mexico</span>
-              </div>
-              <span class="badge bg-primary text-white mt-2 rounded-pill">Scholarship</span>
-            </div>
-          </div>
-
-          <div class="col-md-4" data-animation="fadeInUp" data-delay="animate__delay-2s">
-            <div class="story-card-mini bg-success-light rounded-4 p-4 text-center h-100">
-              <img src="./static/img/testimonial-images/Lopez.jpg" alt="Lopez"
-                class="rounded-circle mx-auto mb-3 border border-3 border-success" width="80" height="80"
-                loading="lazy">
-              <h5 class="fw-bold text-success">Lopez</h5>
-              <p class="small text-muted mb-3">"I've been able to access education and change the future for my
-                children."</p>
-              <div class="d-flex align-items-center justify-content-center">
-                <i class="bi bi-geo-alt me-2 text-success"></i>
-                <span class="small">Kenya</span>
-              </div>
-              <span class="badge bg-success text-white mt-2 rounded-pill">Education</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Call to Action -->
-        <div class="row justify-content-center mt-5">
-          <div class="col-lg-8 text-center">
-            <div class="bg-neutral-100 rounded-4 p-5">
-              <h3 class="fw-bold mb-3">Ready to Share Your Story?</h3>
-              <p class="text-muted mb-4">Join thousands who have transformed their communities through our programs.</p>
-              <div class="d-flex justify-content-center gap-3 flex-wrap">
-                <button class="btn btn-primary rounded-pill px-4">Apply for Program</button>
-                <button class="btn btn-outline-primary rounded-pill px-4">Share Your Story</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="call-to-action" class="container-fluid bg-orange text-light py-5 text-center">
-      <h2 class="display-5 fw-bold mb-4">Be a ChangeMaker Today</h2>
-      <p class="lead mb-4">Join us in making a real impact on the world. Whether you donate or volunteer, every
-        contribution counts in creating a better tomorrow.</p>
-      <div class="d-flex justify-content-center gap-3">
-        <button class="btn btn-light btn-lg animate__animated animate__pulse" data-bs-toggle="modal"
-          data-bs-target="#staticBackdrop" aria-label="Donate Now">
-          Donate Now
-        </button>
-        <button class="btn btn-outline-light btn-lg mx-2" data-bs-toggle="modal"
-          data-bs-target="#volunteerModal">Volunteer</button>
-
-      </div>
-    </section>
-
-    <!-- Donation Modal -->
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-      aria-labelledby="donationModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content border-0 shadow-lg">
-          <!-- Modal Header with Impact Statement -->
-          <div class="modal-header donation-header border-0 text-white position-relative">
-            <div class="donation-header-bg position-absolute top-0 start-0 w-100 h-100"></div>
-            <div class="position-relative z-2 w-100">
-              <div class="d-flex justify-content-between align-items-start">
-                <div>
-                  <h2 class="modal-title fw-bold mb-2" id="donationModalLabel">
-                    <i class="bi bi-heart-fill me-2"></i>Make a Difference Today
-                  </h2>
-                  <p class="mb-0 opacity-90">Your support transforms lives across 25+ countries</p>
-                </div>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                  aria-label="Close"></button>
-              </div>
-            </div>
-          </div>
-
-          <div class="modal-body p-4">
-            <!-- Impact Preview -->
-            <div class="donation-impact-preview bg-light rounded-4 p-4 mb-4">
-              <div class="row text-center">
-                <div class="col-6 col-md-3 mb-3 mb-md-0">
-                  <div class="impact-number text-primary fw-bold h4 mb-1">$25</div>
-                  <div class="impact-description small text-muted">Provides school supplies for 1 child</div>
-                </div>
-                <div class="col-6 col-md-3 mb-3 mb-md-0">
-                  <div class="impact-number text-primary fw-bold h4 mb-1">$50</div>
-                  <div class="impact-description small text-muted">Feeds a family for 1 week</div>
-                </div>
-                <div class="col-6 col-md-3 mb-3 mb-md-0">
-                  <div class="impact-number text-primary fw-bold h4 mb-1">$100</div>
-                  <div class="impact-description small text-muted">Healthcare for 5 people</div>
-                </div>
-                <div class="col-6 col-md-3">
-                  <div class="impact-number text-primary fw-bold h4 mb-1">$250</div>
-                  <div class="impact-description small text-muted">Clean water access for 1 month</div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Donation Amount Selection -->
-            <div class="donation-section mb-4">
-              <h5 class="section-title mb-3">
-                <i class="bi bi-currency-dollar text-primary me-2"></i>Choose Your Impact
-              </h5>
-
-              <!-- Preset Amounts -->
-              <div class="preset-amounts mb-3">
-                <div class="row g-2">
-                  <div class="col-6 col-md-3">
-                    <button type="button" class="preset-amount-btn btn btn-outline-primary w-100 h-100 py-3"
-                      data-amount="25">
-                      <div class="fw-bold">$25</div>
-                      <div class="small">School Supplies</div>
-                    </button>
-                  </div>
-                  <div class="col-6 col-md-3">
-                    <button type="button" class="preset-amount-btn btn btn-outline-primary w-100 h-100 py-3"
-                      data-amount="50">
-                      <div class="fw-bold">$50</div>
-                      <div class="small">Weekly Meals</div>
-                    </button>
-                  </div>
-                  <div class="col-6 col-md-3">
-                    <button type="button" class="preset-amount-btn btn btn-outline-primary w-100 h-100 py-3"
-                      data-amount="100">
-                      <div class="fw-bold">$100</div>
-                      <div class="small">Healthcare</div>
-                    </button>
-                  </div>
-                  <div class="col-6 col-md-3">
-                    <button type="button" class="preset-amount-btn btn btn-outline-primary w-100 h-100 py-3"
-                      data-amount="250">
-                      <div class="fw-bold">$250</div>
-                      <div class="small">Clean Water</div>
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Custom Amount -->
-              <div class="custom-amount-wrapper">
-                <label for="custom-donation-input" class="form-label fw-semibold">Or enter a custom amount:</label>
-                <div class="input-group input-group-lg">
-                  <span class="input-group-text bg-primary text-white border-primary">$</span>
-                  <input type="number" class="form-control border-primary" id="custom-donation-input"
-                    placeholder="Enter amount" min="1" max="10000">
-                </div>
-                <div class="form-text text-muted">
-                  <i class="bi bi-shield-check me-1"></i>100% of your donation goes directly to our programs
-                </div>
-              </div>
-            </div>
-
-            <!-- Donation Frequency -->
-            <div class="donation-section mb-4">
-              <h5 class="section-title mb-3">
-                <i class="bi bi-arrow-repeat text-primary me-2"></i>Donation Frequency
-              </h5>
-              <div class="frequency-options">
-                <div class="btn-group w-100" role="group" aria-label="Donation frequency">
-                  <input type="radio" class="btn-check" name="frequency" id="one-time" value="one-time" checked>
-                  <label class="btn btn-outline-secondary" for="one-time">
-                    <i class="bi bi-calendar-event me-2"></i>One Time
-                  </label>
-
-                  <input type="radio" class="btn-check" name="frequency" id="monthly" value="monthly">
-                  <label class="btn btn-outline-secondary" for="monthly">
-                    <i class="bi bi-arrow-clockwise me-2"></i>Monthly
-                    <span class="badge bg-success ms-1">Popular</span>
-                  </label>
-
-                  <input type="radio" class="btn-check" name="frequency" id="yearly" value="yearly">
-                  <label class="btn btn-outline-secondary" for="yearly">
-                    <i class="bi bi-calendar-check me-2"></i>Yearly
-                  </label>
-                </div>
-              </div>
-            </div>
-
-            <!-- Payment Methods -->
-            <div class="donation-section mb-4">
-              <h5 class="section-title mb-3">
-                <i class="bi bi-credit-card text-primary me-2"></i>Payment Method
-              </h5>
-              <div class="payment-methods-grid">
-                <div class="row g-3">
-                  <div class="col-6 col-md-4">
-                    <button type="button" class="payment-method-btn btn btn-light w-100 h-100 p-3 position-relative"
-                      data-method="card">
-                      <img src="./static/img/payment-img/credit-card.svg" alt="Credit Card" class="payment-icon mb-2">
-                      <div class="small fw-semibold">Card</div>
-                      <div class="payment-check position-absolute top-0 end-0 m-2">
-                        <i class="bi bi-check-circle-fill text-success d-none"></i>
-                      </div>
-                    </button>
-                  </div>
-                  <div class="col-6 col-md-4">
-                    <button type="button" class="payment-method-btn btn btn-light w-100 h-100 p-3 position-relative"
-                      data-method="paypal">
-                      <img src="./static/img/payment-img/icons8-paypal-logo.svg" alt="PayPal" class="payment-icon mb-2">
-                      <div class="small fw-semibold">PayPal</div>
-                      <div class="payment-check position-absolute top-0 end-0 m-2">
-                        <i class="bi bi-check-circle-fill text-success d-none"></i>
-                      </div>
-                    </button>
-                  </div>
-                  <div class="col-6 col-md-4">
-                    <button type="button" class="payment-method-btn btn btn-light w-100 h-100 p-3 position-relative"
-                      data-method="apple">
-                      <img src="./static/img/payment-img/icons8-apple-pay.svg" alt="Apple Pay"
-                        class="payment-icon mb-2">
-                      <div class="small fw-semibold">Apple Pay</div>
-                      <div class="payment-check position-absolute top-0 end-0 m-2">
-                        <i class="bi bi-check-circle-fill text-success d-none"></i>
-                      </div>
-                    </button>
-                  </div>
-                  <div class="col-6 col-md-4">
-                    <button type="button" class="payment-method-btn btn btn-light w-100 h-100 p-3 position-relative"
-                      data-method="google">
-                      <img src="./static/img/payment-img/icons8-google-pay.svg" alt="Google Pay"
-                        class="payment-icon mb-2">
-                      <div class="small fw-semibold">Google Pay</div>
-                      <div class="payment-check position-absolute top-0 end-0 m-2">
-                        <i class="bi bi-check-circle-fill text-success d-none"></i>
-                      </div>
-                    </button>
-                  </div>
-                  <div class="col-6 col-md-4">
-                    <button type="button" class="payment-method-btn btn btn-light w-100 h-100 p-3 position-relative"
-                      data-method="mpesa">
-                      <img src="./static/img/payment-img/mpesa-logo.png" alt="M-Pesa" class="payment-icon mb-2">
-                      <div class="small fw-semibold">M-Pesa</div>
-                      <div class="payment-check position-absolute top-0 end-0 m-2">
-                        <i class="bi bi-check-circle-fill text-success d-none"></i>
-                      </div>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Donor Information (Optional) -->
-            <div class="donation-section">
-              <h5 class="section-title mb-3">
-                <i class="bi bi-person text-primary me-2"></i>Donor Information
-                <span class="badge bg-light text-dark ms-2">Optional</span>
-              </h5>
-              <div class="row g-3">
-                <div class="col-md-6">
-                  <input type="text" class="form-control" id="donor-name" placeholder="Full Name (Optional)">
-                </div>
-                <div class="col-md-6">
-                  <input type="email" class="form-control" id="donor-email" placeholder="Email (For receipt)">
-                </div>
-              </div>
-              <div class="form-check mt-3">
-                <input class="form-check-input" type="checkbox" id="anonymous-donation">
-                <label class="form-check-label text-muted" for="anonymous-donation">
-                  Make this donation anonymous
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="newsletter-signup">
-                <label class="form-check-label text-muted" for="newsletter-signup">
-                  Subscribe to our newsletter for impact updates
-                </label>
-              </div>
-            </div>
-          </div>
-
-          <!-- Enhanced Footer -->
-          <div class="modal-footer donation-footer border-0 bg-light p-4">
-            <div class="w-100">
-              <!-- Donation Summary -->
-              <div class="donation-summary bg-white rounded-3 p-3 mb-3">
-                <div class="d-flex justify-content-between align-items-center">
-                  <div>
-                    <div class="fw-bold">Donation Summary</div>
-                    <div class="text-muted small">
-                      <span id="summary-frequency">One-time</span> donation
-                    </div>
-                  </div>
-                  <div class="text-end">
-                    <div class="h4 fw-bold text-primary mb-0">
-                      $<span id="summary-amount">25</span>
-                    </div>
-                    <div class="text-muted small" id="summary-impact">Provides school supplies for 1 child</div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Action Buttons -->
-              <div class="d-flex gap-3">
-                <button type="button" class="btn btn-light flex-fill" data-bs-dismiss="modal">
-                  <i class="bi bi-arrow-left me-2"></i>Cancel
-                </button>
-                <button type="button" class="btn btn-primary flex-fill btn-lg donate-now-btn">
-                  <i class="bi bi-heart-fill me-2"></i>
-                  <span>Donate Now</span>
-                  <i class="bi bi-arrow-right ms-2"></i>
-                </button>
-              </div>
-
-              <!-- Security Notice -->
-              <div class="text-center mt-3">
-                <small class="text-muted">
-                  <i class="bi bi-shield-check me-1"></i>
-                  Secure 256-bit SSL encryption • Tax-deductible • Instant receipt
-                </small>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Volunteer modal -->
-    <div class="modal fade" id="volunteerModal" tabindex="-1" aria-labelledby="volunteerModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content rounded-3 shadow-lg border-0">
-          <div class="modal-header border-0">
-            <h2 class="modal-title w-100 text-center fw-bold" id="volunteerModalLabel">Volunteer with ChangeMakers</h2>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body text-center">
-            <p class="lead text-muted">Join our team and make a difference. Fill out the form below to get started.</p>
-            <form>
-              <div class="mb-3">
-                <input type="text" class="form-control" id="volunteer-name" placeholder="Your Name" required>
-              </div>
-              <div class="mb-3">
-                <input type="email" class="form-control" id="volunteer-email" placeholder="Your Email" required>
-              </div>
-              <div class="mb-3">
-                <textarea class="form-control" id="volunteer-message" rows="3"
-                  placeholder="Why do you want to volunteer?" required></textarea>
-              </div>
-              <button type="submit" class="btn btn-dark w-100">Submit</button>
             </form>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </main>
-  <footer class="bg-dark text-light pt-5 pb-4">
-    <div class="container">
-      <div class="row g-4">
-        <!-- Organization Info -->
-        <div class="col-lg-4">
-          <div class="mb-4">
-            <h5 class="text-uppercase mb-3 border-start border-primary border-4 ps-3">ChangeMakers</h5>
-            <p class="text-light opacity-75">Empowering communities through education, sustainability initiatives, and
-              local engagement.</p>
-          </div>
-          <div class="social-links d-flex gap-3 mb-4">
-            <a href="#" class="social-icon" aria-label="Visit our Facebook page">
-              <i class="bi bi-facebook"></i>
-            </a>
-            <a href="#" class="social-icon" aria-label="Visit our Twitter page">
-              <i class="bi bi-twitter-x"></i>
-            </a>
-            <a href="#" class="social-icon" aria-label="Visit our Instagram page">
-              <i class="bi bi-instagram"></i>
-            </a>
-            <a href="#" class="social-icon" aria-label="Visit our LinkedIn page">
-              <i class="bi bi-linkedin"></i>
-            </a>
-            <a href="#" class="social-icon" aria-label="Visit our YouTube channel">
-              <i class="bi bi-youtube"></i>
-            </a>
-          </div>
-          <div class="d-flex align-items-center">
-            <i class="bi bi-geo-alt text-primary me-2"></i>
-            <span class="text-light opacity-75">123 Impact Street, Nairobi, Kenya</span>
-          </div>
-        </div>
-
-        <!-- Quick Links -->
-        <div class="col-sm-6 col-md-4 col-lg-2">
-          <h5 class="text-uppercase mb-3 border-start border-primary border-4 ps-3">Get Involved</h5>
-          <ul class="list-unstyled footer-links">
-            <li class="mb-2"><a href="#" class="footer-link">Donate</a></li>
-            <li class="mb-2"><a href="#" class="footer-link">Volunteer</a></li>
-            <li class="mb-2"><a href="#" class="footer-link">Partnerships</a></li>
-            <li class="mb-2"><a href="#" class="footer-link">Fundraise</a></li>
-            <li class="mb-2"><a href="#" class="footer-link">Corporate Support</a></li>
-          </ul>
-        </div>
-
-        <!-- Educational Resources -->
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <h5 class="text-uppercase mb-3 border-start border-primary border-4 ps-3">Education Center</h5>
-          <ul class="list-unstyled footer-links">
-            <li class="mb-2"><a href="#" class="footer-link">Resource Library</a></li>
-            <li class="mb-2"><a href="#" class="footer-link">Online Courses</a></li>
-            <li class="mb-2"><a href="#" class="footer-link">Research Publications</a></li>
-            <li class="mb-2"><a href="#" class="footer-link">SDG Resources</a></li>
-            <li class="mb-2"><a href="#" class="footer-link">Educational Blog</a></li>
-          </ul>
-        </div>
-
-        <!-- Newsletter -->
-        <div class="col-md-4 col-lg-3">
-          <h5 class="text-uppercase mb-3 border-start border-primary border-4 ps-3">Stay Informed</h5>
-          <p class="text-light opacity-75 mb-3">Subscribe to our newsletter for the latest resources and updates.</p>
-          <form class="mb-3">
-            <div class="input-group">
-              <input type="email" class="form-control" placeholder="Your email" aria-label="Your email" required>
-              <button class="btn btn-primary" type="submit">Subscribe</button>
+            <div>
+              <a href="#" class="btn btn-sm btn-outline-light me-2 mb-2"
+                >Annual Report</a
+              >
+              <a href="#" class="btn btn-sm btn-outline-light mb-2"
+                >Impact Studies</a
+              >
             </div>
-          </form>
-          <div>
-            <a href="#" class="btn btn-sm btn-outline-light me-2 mb-2">Annual Report</a>
-            <a href="#" class="btn btn-sm btn-outline-light mb-2">Impact Studies</a>
+          </div>
+        </div>
+
+        <hr class="mt-4 mb-3 border-secondary opacity-25" />
+
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start">
+            <p class="mb-0 text-light opacity-75">
+              &copy; 2025 ChangeMakers. All Rights Reserved.
+            </p>
+          </div>
+          <div class="col-md-6 mt-3 mt-md-0">
+            <ul class="list-inline mb-0 text-center text-md-end">
+              <li class="list-inline-item">
+                <a href="#" class="text-light opacity-75">Privacy Policy</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-light opacity-75">Terms of Use</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-light opacity-75">Cookie Policy</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-
-      <hr class="mt-4 mb-3 border-secondary opacity-25">
-
-      <div class="row align-items-center">
-        <div class="col-md-6 text-center text-md-start">
-          <p class="mb-0 text-light opacity-75">&copy; 2025 ChangeMakers. All Rights Reserved.</p>
-        </div>
-        <div class="col-md-6 mt-3 mt-md-0">
-          <ul class="list-inline mb-0 text-center text-md-end">
-            <li class="list-inline-item"><a href="#" class="text-light opacity-75">Privacy Policy</a></li>
-            <li class="list-inline-item"><a href="#" class="text-light opacity-75">Terms of Use</a></li>
-            <li class="list-inline-item"><a href="#" class="text-light opacity-75">Cookie Policy</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  <script src="./static/scripts.js"></script>
-</body>
-
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./static/scripts.js"></script>
+  </body>
 </html>

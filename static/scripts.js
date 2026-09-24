@@ -223,6 +223,7 @@ class DonationModal {
       summaryFrequency: '#summary-frequency',
       summaryImpact: '#summary-impact',
       donateBtn: '.donate-now-btn',
+      phoneInput: '#donor-phone',
       legacyBtns: '.donate-amount-btn'
     };
 
@@ -258,6 +259,9 @@ class DonationModal {
 
     // Donate button
     this.elements.donateBtn?.addEventListener('click', () => this.handleDonate());
+
+    // M-Pesa phone number
+    this.elements.phoneInput?.addEventListener('input', () => this.updateDonateButton());
 
     // Legacy buttons (backward compatibility)
     this.elements.legacyBtns?.forEach(btn => {
@@ -358,12 +362,13 @@ class DonationModal {
   updateDonateButton() {
     if (!this.elements.donateBtn) return;
 
-    const isValid = this.state.amount > 0 && this.state.paymentMethod;
+    const isMpesa = this.state.paymentMethod === 'mpesa';
+    const isValid = this.isValidDonation();
     this.elements.donateBtn.disabled = !isValid;
 
     const content = isValid
       ? `<i class="bi bi-heart-fill me-2"></i><span>Donate $${this.state.amount}</span><i class="bi bi-arrow-right ms-2"></i>`
-      : `<i class="bi bi-heart-fill me-2"></i><span>Select Payment Method</span>`;
+      : `<i class="bi bi-heart-fill me-2"></i><span>${isMpesa ? 'Enter Valid M-Pesa Number' : 'Select M-Pesa'}</span>`;
 
     this.elements.donateBtn.innerHTML = content;
   }
@@ -374,16 +379,37 @@ class DonationModal {
     this.setProcessingState();
 
     try {
-      // Simulate processing (replace with actual payment processing)
-      await new Promise(resolve => setTimeout(resolve, 2000));
-      this.showSuccess();
+      const response = await fetch('/api/mpesa/stkpush', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          amount: this.state.amount,
+          phoneNumber: this.elements.phoneInput.value,
+          donorName: document.getElementById('donor-name')?.value || '',
+          donorEmail: document.getElementById('donor-email')?.value || '',
+          frequency: this.state.frequency
+        })
+      });
+      const result = await response.json();
+
+      if (!response.ok) throw new Error(result.error || 'M-Pesa payment could not be started.');
+
+      this.showSuccess(result.message || 'Check your phone and enter your M-Pesa PIN to complete the donation.');
     } catch (error) {
-      this.showError(error);
+      this.showError(error.message);
     }
   }
 
   isValidDonation() {
-    return this.state.amount > 0 && this.state.paymentMethod;
+    return this.state.amount > 0 && this.state.paymentMethod === 'mpesa' &&
+      /^254\d{9}$/.test(this.normalizePhoneNumber(this.elements.phoneInput?.value));
+  }
+
+  normalizePhoneNumber(phoneNumber = '') {
+    const digits = phoneNumber.replace(/\D/g, '');
+    if (digits.startsWith('0')) return `254${digits.slice(1)}`;
+    if (digits.startsWith('7') || digits.startsWith('1')) return `254${digits}`;
+    return digits;
   }
 
   setProcessingState() {
@@ -394,20 +420,20 @@ class DonationModal {
     `;
   }
 
-  showSuccess() {
+  showSuccess(message) {
     // Hide modal
     const modal = bootstrap.Modal.getInstance(this.elements.modal);
     modal?.hide();
 
     // Show success notification
-    this.showNotification('success', `Thank you! Your $${this.state.amount} donation has been processed successfully.`);
+    this.showNotification('success', message);
 
     // Reset modal
     this.reset();
   }
 
   showError(error) {
-    this.showNotification('error', 'There was an error processing your donation. Please try again.');
+    this.showNotification('error', error || 'There was an error starting your M-Pesa donation. Please try again.');
     this.updateDonateButton(); // Reset button state
   }
 
@@ -445,7 +471,7 @@ class DonationModal {
     document.getElementById('one-time')?.click();
 
     // Reset form fields
-    ['donor-name', 'donor-email'].forEach(id => {
+    ['donor-name', 'donor-email', 'donor-phone'].forEach(id => {
       const field = document.getElementById(id);
       if (field) field.value = '';
     });
